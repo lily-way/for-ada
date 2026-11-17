@@ -3,10 +3,10 @@
 # The game starts here.
 
 label start:
-    call scene_1_dialogue_1
-    call scene_1_interaction_1
-    call scene_1_interaction_2
-    call scene_2_dialogue_1
+    # call scene_1_dialogue_1
+    # call scene_1_interaction_1
+    # call scene_1_interaction_2
+    # call scene_2_dialogue_1
     call scene_2_interaction_1
     call scene_2_dialogue_2
     call scene_2_interaction_2

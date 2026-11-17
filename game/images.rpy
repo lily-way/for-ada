@@ -23,44 +23,16 @@ image bg light_cycle_2 = "images/backgrounds/Light_Cycles(2).png"
 image bg light_cycle_3 = "images/backgrounds/Light_Cycles(3).png"
 image bg light_cycle_4 = "images/backgrounds/Light_Cycles(4).png"
 
-
-################################################################################
-## Character Sprites
-################################################################################
-
-# Cait
-
-image cait focus = "images/characters/Cait_focus.png"
-image cait mad = "images/characters/Cait_PO.png"
-image cait smile = "images/characters/Cait_smile.png"
-image cait sweet = "images/characters/Cait_sweet.png"
-image cait PO = "images/characters/Cait_PO.png"
-image cait worry = "images/characters/Cait_worry.png"
-image cait panic = "images/characters/Cait_panic.png"
-image cait broken_focus = "images/characters/Cait_broken_focus.png"
-
-image cait broken_sweet = "images/characters/Cait_sweet.png"
-image cait broken_raincoat_focus = "images/characters/Cait_focus.png"
-image cait broken_raincoat_pissed = "images/characters/Cait_PO.png"
-image cait broken_raincoat_bloody_focus = "images/characters/Cait_focus.png"
-image cait broken_raincoat_bloody_pissed = "images/characters/Cait_PO.png"
-
-image cait broken_extrabloody_focus = "images/characters/Cait_broken_focus.png"
-image cait broken_extrabloody_sweet = "images/characters/Cait_sweet.png"
-image cait broken_extrabloody_pissed = "images/characters/Cait_PO.png"
-
-
 ################################################################################
 ## Cait Headshots
 ################################################################################
 
-image headshot_cait focus = make_headshot("images/characters/headshots/Cait_focus_hs.png")
-image headshot_cait mad = make_headshot("images/characters/headshots/Cait_PO_hs.png")
-image headshot_cait smile = make_headshot("images/characters/headshots/Cait_smile_hs.png")
-image headshot_cait sweet = make_headshot("images/characters/headshots/Cait_sweet_hs.png")
-image headshot_cait PO = make_headshot("images/characters/headshots/Cait_PO_hs.png")
-image headshot_cait worry = make_headshot("images/characters/headshots/Cait_worry_hs.png")
-image headshot_cait panic = make_headshot("images/characters/headshots/Cait_panic_hs.png")
+image headshot_cait focus = make_headshot("images/characters/headshots/cait_focus_headshot.png")
+image headshot_cait smile = make_headshot("images/characters/headshots/cait_smile_headshot.png")
+image headshot_cait sweet = make_headshot("images/characters/headshots/cait_sweet_headshot.png")
+image headshot_cait PO = make_headshot("images/characters/headshots/cait_pissed_headshot.png")
+image headshot_cait worry = make_headshot("images/characters/headshots/cait_worry_headshot.png")
+image headshot_cait panic = make_headshot("images/characters/headshots/cait_sob_headshot.png")
 
 image headshot_cait broken_focus = make_headshot("images/characters/headshots/Cait_focus_hs.png")
 image headshot_cait broken_sweet = make_headshot("images/characters/headshots/Cait_sweet_hs.png")
@@ -82,7 +54,6 @@ image headshot_cait broken_extrabloody_pissed = make_headshot("images/characters
 
 image martin neutral = "images/characters/Martin_Neutral.png"
 image martin laugh = "images/characters/Martin_Happy.png"
-image martin rage = "images/characters/Martin_Rage.png"
 
 image martin PJs_concerned = "images/characters/Martin_PJs_Concern.png"
 image martin PJs_neutral = "images/characters/Martin_PJs_Neutral.png"
@@ -177,15 +148,13 @@ init python:
 ## Ada Headshot Expressions
 ################################################################################
 
-image headshot_ada neutral = ada_debug_headshot("neutral")
-image headshot_ada sleepy = ada_debug_headshot("sleepy")
-image headshot_ada sick = ada_debug_headshot("sick")
-image headshot_ada mischief = ada_debug_headshot("mischief")
-image headshot_ada happy = ada_debug_headshot("happy")
-image headshot_ada shock = ada_debug_headshot("shock")
-image headshot_ada thoughtful = ada_debug_headshot("thoughtful")
-image headshot_ada deathly_eyes_open = ada_debug_headshot("deathly_eyes_open")
-image headshot_ada deathly_eyes_closed = ada_debug_headshot("deathly_eyes_closed")
+image headshot_ada neutral = make_headshot("images/characters/headshots/ada_neutral_headshot.png")
+image headshot_ada sleepy = make_headshot("images/characters/headshots/ada_sleepy_headshot.png")
+image headshot_ada sick = make_headshot("images/characters/headshots/ada_sick_headshot.png")
+image headshot_ada mischief = make_headshot("images/characters/headshots/ada_mischief_headshot.png")
+image headshot_ada happy = make_headshot("images/characters/headshots/ada_neutral_headshot.png")
+image headshot_ada shock = make_headshot("images/characters/headshots/ada_shock_headshot.png")
+image headshot_ada thoughtful = make_headshot("images/characters/headshots/ada_thoughtful_headshot.png")
 
 
 ################################################################################
@@ -236,13 +205,10 @@ image bg d9_exposed_torso = "images/backgrounds/d9_exposed_torso.png"
 image bg d9_ports_torso = "images/backgrounds/d9_ports_torso.png"
 image bg d9_tubes_torso = "images/backgrounds/d9_tubes_torso.png"
 
-
 ################################################################################
 ## D9 Close-up Backgrounds
 ################################################################################
 
 image bg d9_closeup_auto = "images/backgrounds/d9_close_automation.png"
 image bg d9_closeup_aware = "images/backgrounds/d9_close_fear.png"
-image bg d9_full_port = "images/backgrounds/d9_full_port.png"
-image bg d9_empty_port = "images/backgrounds/d9_empty_port.png"
     
