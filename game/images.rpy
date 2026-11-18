@@ -34,19 +34,6 @@ image headshot_cait PO = make_headshot("images/characters/headshots/cait_pissed_
 image headshot_cait worry = make_headshot("images/characters/headshots/cait_worry_headshot.png")
 image headshot_cait panic = make_headshot("images/characters/headshots/cait_sob_headshot.png")
 
-image headshot_cait sweet = make_headshot("images/characters/headshots/Cait_sweet_hs.png")
-image headshot_cait focus = make_headshot("images/characters/headshots/Cait_focus_hs.png")
-image headshot_cait PO = make_headshot("images/characters/headshots/Cait_PO_hs.png")
-image headshot_cait focus = make_headshot("images/characters/headshots/Cait_focus_hs.png")
-image headshot_cait PO = make_headshot("images/characters/headshots/Cait_PO_hs.png")
-image headshot_cait smile = make_headshot("images/characters/headshots/Cait_smile_hs.png")
-image headshot_cait panic = make_headshot("images/characters/headshots/Cait_panic_hs.png")
-
-image headshot_cait focus = make_headshot("images/characters/headshots/Cait_focus_hs.png")
-image headshot_cait sweet = make_headshot("images/characters/headshots/Cait_sweet_hs.png")
-image headshot_cait PO = make_headshot("images/characters/headshots/Cait_PO_hs.png")
-
-
 ################################################################################
 ## Martin Sprites
 ################################################################################
