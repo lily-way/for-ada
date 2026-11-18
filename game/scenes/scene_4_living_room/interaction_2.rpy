@@ -313,7 +313,7 @@ label scene_4_interaction_2_d9_clothed:
 
     cait "(I’ll need to find each of D9’s and pump her biofluids to Ada.)"
 
-    show headshot_cait broken_extrabloody_worry at headshot_left, speaking
+    show headshot_cait worry at headshot_left, speaking
     cait "(There’s not enough fluid for each of them…)"
 
     cait "(...)"
