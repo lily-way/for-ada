@@ -180,7 +180,7 @@ label scene_3_interaction_3_exposed_ribcage:
 
     # play sound "audio/bonesaw.mp3"
 
-    show headshot_cait broken_raincoat_extrabloody_smile at headshot_left, speaking
+    show headshot_cait smile at headshot_left, speaking
     cait "(Look at those beautiful new lungs.)"
 
     hide headshot_cait
@@ -204,7 +204,7 @@ label scene_3_interaction_3_exposed_organs:
 
     # play sound "audio/fleshscoop.mp3"
 
-    show headshot_cait broken_raincoat_extrabloody_smile at headshot_left, speaking
+    show headshot_cait smile at headshot_left, speaking
     cait "(Thank you, Martin…)"
 
     hide headshot_cait

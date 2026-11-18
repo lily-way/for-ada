@@ -205,7 +205,7 @@ label scene_4_interaction_2_kitchen_floor:
     scene expression scene_4_interaction_1_background("kitchen") as bg at background_freeze
     with fade
 
-    show headshot_cait broken_extrabloody_panic at headshot_left, speaking
+    show headshot_cait panic at headshot_left, speaking
     cait "(*huff* *huff*)"
 
     cait "(Ada.)"
@@ -241,14 +241,14 @@ label scene_4_interaction_2_d9_neck:
 
     call single_blur
 
-    show headshot_cait broken_extrabloody_panic at headshot_left, speaking
+    show headshot_cait panic at headshot_left, speaking
     cait "(Can’t…)"
 
     hide headshot_cait
 
     call single_blur
 
-    show headshot_cait broken_extrabloody_panic at headshot_left, speaking
+    show headshot_cait panic at headshot_left, speaking
     cait "(Ugh…!)"
 
     hide headshot_cait
@@ -279,7 +279,7 @@ label scene_4_interaction_2_d9_neck:
         scene bg d9_clothed_torso at background_freeze
         with fade
 
-    show headshot_cait broken_extrabloody_panic at headshot_left, speaking
+    show headshot_cait panic at headshot_left, speaking
     cait "(Enough already!)"
 
     hide headshot_cait
@@ -363,14 +363,14 @@ label scene_4_interaction_2_d9_exposed:
 
     call single_blur
 
-    show headshot_cait broken_extrabloody_panic at headshot_left, speaking
+    show headshot_cait panic at headshot_left, speaking
     cait "(Fuck!)"
 
     hide headshot_cait
 
     call single_blur
 
-    show headshot_cait broken_extrabloody_panic at headshot_left, speaking
+    show headshot_cait panic at headshot_left, speaking
     cait "(I–)"
 
     hide headshot_cait
@@ -417,14 +417,14 @@ label scene_4_interaction_2_return_to_living_room:
 
     call single_blur
 
-    show headshot_cait broken_extrabloody_panic at headshot_left, speaking
+    show headshot_cait panic at headshot_left, speaking
     cait "(*huff* *huff*)"
 
     hide headshot_cait
 
     call single_blur
 
-    show headshot_cait broken_extrabloody_panic at headshot_left, speaking
+    show headshot_cait panic at headshot_left, speaking
     cait "(Just hold on…)"
 
     hide headshot_cait
