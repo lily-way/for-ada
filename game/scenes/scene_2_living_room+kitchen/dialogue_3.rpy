@@ -10,7 +10,7 @@ label scene_2_dialogue_3:
     ) as bg at background_fixed
     with Dissolve(0.5)
 
-    show headshot_cait broken_focus at headshot_left, speaking
+    show headshot_cait focus at headshot_left, speaking
     cait "..."
     cait "(How long has it been…)"
     cait "(Martin.)"
@@ -27,7 +27,7 @@ label scene_2_dialogue_3:
             # play sound "audio/metal_rustling.mp3"
             # play sound "audio/zipper.mp3"
 
-            show headshot_cait broken_focus at headshot_left, speaking
+            show headshot_cait focus at headshot_left, speaking
             cait "(I have what I need.)"
             cait "(I need to go.)"
             cait "(Now.)"

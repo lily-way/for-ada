@@ -224,7 +224,7 @@ label scene_2_interaction_4_observation:
             (0, 0), "bg kitchen"
         ) as bg at background_freeze
 
-    show headshot_cait broken_focus at headshot_left, speaking
+    show headshot_cait focus at headshot_left, speaking
     cait "..."
     cait "(Nothing matters without her.)"
 
@@ -261,7 +261,7 @@ label scene_2_interaction_4_door:
         (0, 0), "bg living_room"
     ) as bg at background_freeze
 
-    show headshot_cait broken_focus at headshot_left, speaking
+    show headshot_cait focus at headshot_left, speaking
     cait "(The storm…)"
 
     hide headshot_cait
