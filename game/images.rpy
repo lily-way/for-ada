@@ -11,6 +11,7 @@ image bg countertop_pot_open = "images/backgrounds/Kitchen_Counter_Open_BC.png"
 image bg storefront_window = "images/backgrounds/Storefront_BC_Window.png"
 image bg storefront_no_window = "images/backgrounds/Storefront_BC_No_Window.png"
 image bg interior_grocery_store_night = "images/backgrounds/Grocery_BC.png"
+image bg hospital = "images/backgrounds/hospital.png"
 
 
 ################################################################################
@@ -23,6 +24,7 @@ image bg light_cycle_2 = "images/backgrounds/Light_Cycles(2).png"
 image bg light_cycle_3 = "images/backgrounds/Light_Cycles(3).png"
 image bg light_cycle_4 = "images/backgrounds/Light_Cycles(4).png"
 
+
 ################################################################################
 ## Cait Headshots
 ################################################################################
@@ -33,6 +35,17 @@ image headshot_cait sweet = make_headshot("images/characters/headshots/cait_swee
 image headshot_cait PO = make_headshot("images/characters/headshots/cait_pissed_headshot.png")
 image headshot_cait worry = make_headshot("images/characters/headshots/cait_worry_headshot.png")
 image headshot_cait panic = make_headshot("images/characters/headshots/cait_sob_headshot.png")
+
+
+################################################################################
+## Young Cait Headshots (Temporary)
+################################################################################
+
+image headshot_cait young_focus = make_headshot("images/characters/headshots/cait_focus_headshot.png")
+image headshot_cait young_smile = make_headshot("images/characters/headshots/cait_smile_headshot.png")
+image headshot_cait young_pissed = make_headshot("images/characters/headshots/cait_pissed_headshot.png")
+image headshot_cait young_worry = make_headshot("images/characters/headshots/cait_worry_headshot.png")
+
 
 ################################################################################
 ## Martin Sprites
@@ -51,8 +64,8 @@ image martin PJs_horror = "images/characters/Martin_PJs_Horror.png"
 ################################################################################
 
 image headshot_martin neutral = make_headshot("images/characters/headshots/Martin_Neutral_Headshot.png", center_x=0.55)
-image headshot_martin laugh = make_headshot("images/characters/headshots/Martin_Happy_Headshot.png", center_x=0.55)
-image headshot_martin rage = make_headshot("images/characters/headshots/Martin_Rage_Headshot.png", center_x=0.55)
+image headshot_martin laugh = make_headshot("images/characters/headshots/Martin_Happy_Headshot.png")
+image headshot_martin rage = make_headshot("images/characters/headshots/Martin_Rage_Headshot.png")
 
 
 ################################################################################
@@ -72,6 +85,7 @@ image d9 neutral = "images/characters/D9_Neutral.png"
 image d9 alarmed = "images/characters/D9_Alarmed.png"
 image d9 automaton = "images/characters/D9_Automaton.png"
 image d9 fear = "images/characters/D9_Fear.png"
+
 
 ################################################################################
 ## Ada Sprites (Temporary Debug)
@@ -144,6 +158,16 @@ image headshot_ada thoughtful = make_headshot("images/characters/headshots/ada_t
 
 
 ################################################################################
+## Young Ada Headshots (Temporary)
+################################################################################
+
+image headshot_ada young_neutral = make_headshot("images/characters/headshots/ada_neutral_headshot.png")
+image headshot_ada young_mischief = make_headshot("images/characters/headshots/ada_mischief_headshot.png")
+image headshot_ada young_smile = make_headshot("images/characters/headshots/ada_neutral_headshot.png")
+image headshot_ada young_thoughtful = make_headshot("images/characters/headshots/ada_thoughtful_headshot.png")
+
+
+################################################################################
 ## Cooking Ingredients
 ################################################################################
 
@@ -172,6 +196,7 @@ image bg martin_exposed_ribcage = "images/backgrounds/MartinFloor3.png"
 image bg martin_exposed_organs = "images/backgrounds/MartinFloor4.png"
 image bg martin_no_lungs = "images/backgrounds/MartinFloor5.png"
 
+
 ################################################################################
 ## Martin's Wife Dissection Backgrounds
 ################################################################################
@@ -180,6 +205,7 @@ image bg wife_clothed_torso = "images/backgrounds/wife_clothed_torso.png"
 image bg wife_exposed_torso = "images/backgrounds/wife_exposed_torso.png"
 image bg wife_exposed_organs = "images/backgrounds/wife_exposed_organs.png"
 image bg wife_no_heart = "images/backgrounds/wife_no_heart.png"
+
 
 ################################################################################
 ## D9 Dissection Backgrounds
@@ -191,10 +217,10 @@ image bg d9_exposed_torso = "images/backgrounds/d9_exposed_torso.png"
 image bg d9_ports_torso = "images/backgrounds/d9_ports_torso.png"
 image bg d9_tubes_torso = "images/backgrounds/d9_tubes_torso.png"
 
+
 ################################################################################
 ## D9 Close-up Backgrounds
 ################################################################################
 
 image bg d9_closeup_auto = "images/backgrounds/d9_close_automation.png"
 image bg d9_closeup_aware = "images/backgrounds/d9_close_fear.png"
-    
