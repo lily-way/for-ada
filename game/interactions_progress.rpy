@@ -18,17 +18,19 @@ init python:
 
     def get_interaction_progress(objects, mandatory):
 
-        interactions = [
-            obj for obj in objects
+        # Count each completed variable only once.
+        unique_interactions = {
+            obj.completed
+            for obj in objects
             if obj.mandatory == mandatory and getattr(obj, "completed", None)
-        ]
+        }
 
         completed = sum(
-            1 for obj in interactions
-            if getattr(renpy.store, obj.completed, False)
+            1 for variable in unique_interactions
+            if getattr(renpy.store, variable, False)
         )
 
-        return completed, len(interactions)
+        return completed, len(unique_interactions)
 
 
     def toggle_progress():
