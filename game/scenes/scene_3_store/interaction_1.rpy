@@ -82,7 +82,7 @@ label scene_3_interaction_1:
     scene bg storefront_window at background_freeze
     with fade
 
-    show headshot_cait broken_raincoat_focus at headshot_left, speaking
+    show headshot_cait focus at headshot_left, speaking
     cait "(He must be inside with his family…)"
     cait "(I need to wake them up.)"
 
@@ -141,7 +141,7 @@ label scene_3_interaction_1_door:
 
             # play sound "audio/bang_on_door.mp3"
 
-            show headshot_cait broken_raincoat_focus at headshot_left, speaking
+            show headshot_cait focus at headshot_left, speaking
             cait "(Nothing.)"
 
             hide headshot_cait
@@ -170,10 +170,10 @@ label scene_3_interaction_1_window:
 
             # play sound "audio/bang_on_window.mp3"
 
-            show headshot_cait broken_raincoat_focus at headshot_left, speaking
+            show headshot_cait focus at headshot_left, speaking
             cait "(Nothing.)"
 
-            show headshot_cait broken_raincoat_pissed at headshot_left, speaking
+            show headshot_cait PO at headshot_left, speaking
             cait "(Fuck!)"
 
             hide headshot_cait
@@ -204,7 +204,7 @@ label scene_3_interaction_1_smash_window:
 
             scene bg storefront_no_window at background_freeze
 
-            show headshot_cait broken_raincoat_bloody_focus at headshot_left, speaking
+            show headshot_cait focus at headshot_left, speaking
             cait "(There we go.)"
 
             hide headshot_cait

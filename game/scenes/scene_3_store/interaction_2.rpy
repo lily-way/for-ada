@@ -143,7 +143,7 @@ label scene_3_interaction_2_cheek_ear:
 
     show bg d9_closeup_aware at background_freeze
 
-    show headshot_cait broken_raincoat_bloody_focus at headshot_left, speaking
+    show headshot_cait focus at headshot_left, speaking
     cait "(If only I knew what thoughts were running through your head, D9…)"
     cait "(Are you angry with me?)"
     cait "(Frustrated with Martin?)"
@@ -177,7 +177,7 @@ label scene_3_interaction_2_nose_mouth:
 
     show bg d9_closeup_aware at background_freeze
 
-    show headshot_cait broken_raincoat_bloody_focus at headshot_left, speaking
+    show headshot_cait focus at headshot_left, speaking
     cait "(D9 is in excellent homeostatic condition.)"
     cait "(Not a surprise. Martin’s always taken good care of his androids.)"
     cait "(Still, nothing can prevent the decay of human organics.)"
@@ -185,15 +185,15 @@ label scene_3_interaction_2_nose_mouth:
     cait "(Two years, to be exact.)"
     cait "(Of course, there are no scientific barriers to replacing an android’s human organics.)"
 
-    show headshot_cait broken_raincoat_bloody_pissed at headshot_left, speaking
+    show headshot_cait PO at headshot_left, speaking
     cait "(Just legal ones.)"
     cait "(According to the review boards, maintaining a tool capable of original thought for too long was an ethical concern.)"
     cait "(In other words…)"
 
-    show headshot_cait broken_raincoat_bloody_focus at headshot_left, speaking
+    show headshot_cait focus at headshot_left, speaking
     cait "(They feared sentience.)"
 
-    show headshot_cait broken_raincoat_bloody_pissed at headshot_left, speaking
+    show headshot_cait PO at headshot_left, speaking
     cait "(And because of their fears…)"
     cait "(Their waste…)"
     cait "(We lose good beings.)"
@@ -201,7 +201,7 @@ label scene_3_interaction_2_nose_mouth:
     cait "(Beings like D8.)"
     cait "(...)"
 
-    show headshot_cait broken_raincoat_bloody_focus at headshot_left, speaking
+    show headshot_cait focus at headshot_left, speaking
     cait "(But you still have so much life, D9.)"
     cait "(You still hold such potential.)"
 
@@ -225,33 +225,33 @@ label scene_3_interaction_2_eyes:
 
     show bg d9_closeup_aware at background_freeze
 
-    show headshot_cait broken_raincoat_bloody_focus at headshot_left, speaking
+    show headshot_cait focus at headshot_left, speaking
     cait "(For a long time, eyes were the trickiest human organ to industrially reproduce.)"
     cait "(Hearts, lungs, stomachs…)"
     cait "(Corporate tissue-farming worlds cranked those out by the ton and had them across the galaxy in a week.)"
     cait "(But not eyes.)"
 
-    show headshot_cait broken_raincoat_bloody_pissed at headshot_left, speaking
+    show headshot_cait PO at headshot_left, speaking
     cait "(In the early days, my lab would have to place orders months in advance if we wanted to prototype with a set of them.)"
 
-    show headshot_cait broken_raincoat_bloody_focus at headshot_left, speaking
+    show headshot_cait focus at headshot_left, speaking
     cait "(It was only because of advancements in precision stem cell manufacturing that we could start reliably creating sighted android designs.)"
 
-    show headshot_cait broken_raincoat_bloody_smile at headshot_left, speaking
+    show headshot_cait smile at headshot_left, speaking
     cait "(We were the first to show plastic adaptation of the human eye to android synethics.)"
 
-    show headshot_cait broken_raincoat_bloody_focus at headshot_left, speaking
+    show headshot_cait focus at headshot_left, speaking
     cait "(At this point, critical human-to-android grafts like the heart or the digestives had long been operational, but this…)"
 
-    show headshot_cait broken_raincoat_bloody_smile at headshot_left, speaking
+    show headshot_cait smile at headshot_left, speaking
     cait "(This was revolutionary.)"
 
-    show headshot_cait broken_raincoat_bloody_focus at headshot_left, speaking
+    show headshot_cait focus at headshot_left, speaking
     cait "(D9 is evidence of how far the field has come since those early days.)"
     cait "(When I look at you, D9, I can’t say I’m not proud.)"
     cait "(Whichever manufacturer produced you does impressive work.)"
 
-    show headshot_cait broken_raincoat_bloody_smile at headshot_left, speaking
+    show headshot_cait smile at headshot_left, speaking
     cait "(You are impressive.)"
 
     hide headshot_cait
@@ -274,7 +274,7 @@ label scene_3_interaction_2_neck:
 
     show bg d9_closeup_aware at background_freeze
 
-    show headshot_cait broken_raincoat_bloody_focus at headshot_left, speaking
+    show headshot_cait focus at headshot_left, speaking
     cait "(I’ve opened up these panels so many times, I could do it with my eyes closed.)"
 
     hide headshot_cait
@@ -287,7 +287,7 @@ label scene_3_interaction_2_neck:
 
             show expression "images/backgrounds/d9_empty_port.png" as port zorder 10 at background_freeze
 
-            show headshot_cait broken_raincoat_bloody_focus at headshot_left, speaking
+            show headshot_cait focus at headshot_left, speaking
             cait "(Less sensory input should reduce your stress responses.)"
             cait "(I have a crude fix on hand that should do the trick.)"
             cait "(Just try to relax, D9…)"
@@ -303,7 +303,7 @@ label scene_3_interaction_2_neck:
             show bg d9_closeup_auto at background_freeze
             show expression "images/backgrounds/d9_full_port.png" as port zorder 10 at background_freeze
 
-            show headshot_cait broken_raincoat_bloody_smile at headshot_left, speaking
+            show headshot_cait smile at headshot_left, speaking
             cait "(Much better.)"
 
             hide headshot_cait

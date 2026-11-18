@@ -179,14 +179,14 @@ label scene_4_interaction_1_go_to_kitchen:
 
         call single_blur
 
-        show headshot_cait broken_extrabloody_pissed at headshot_left, speaking
+        show headshot_cait PO at headshot_left, speaking
         cait "(Ugh!)"
 
         hide headshot_cait
 
         call single_blur
 
-        show headshot_cait broken_extrabloody_pissed at headshot_left, speaking
+        show headshot_cait PO at headshot_left, speaking
         cait "(Stay focused!)"
 
         hide headshot_cait
@@ -245,7 +245,7 @@ label scene_4_interaction_1_armchair:
 
     show expression scene_4_interaction_1_background("living_room") as bg at background_freeze
 
-    show headshot_cait broken_extrabloody_sweet at headshot_left, speaking
+    show headshot_cait sweet at headshot_left, speaking
     cait "Just a little longer, baby…"
 
     hide headshot_cait
@@ -268,7 +268,7 @@ label scene_4_interaction_1_radio:
 
     show expression scene_4_interaction_1_background("living_room") as bg at background_freeze
 
-    show headshot_cait broken_extrabloody_focus at headshot_left, speaking
+    show headshot_cait focus at headshot_left, speaking
     cait "(It’s just static.)"
 
     cait "(Tuned to a dead channel.)"
@@ -295,7 +295,7 @@ label scene_4_interaction_1_window:
         scene_4_interaction_1_room
     ) as bg at background_freeze
 
-    show headshot_cait broken_extrabloody_focus at headshot_left, speaking
+    show headshot_cait focus at headshot_left, speaking
     cait "(The storm’s coming down hard.)"
 
     cait "(It’ll be weeks before any new ships can dock planetside.)"

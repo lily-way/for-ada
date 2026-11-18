@@ -85,7 +85,7 @@ label scene_3_interaction_3:
     scene bg martin_clothed_torso at background_freeze
     with Dissolve(0.5)
 
-    show headshot_cait broken_raincoat_bloody_focus at headshot_left, speaking
+    show headshot_cait focus at headshot_left, speaking
     cait "(That was loud. I’ll have to work quickly.)"
 
     hide headshot_cait

@@ -152,7 +152,7 @@ label scene_4_interaction_2_kitchen_floor:
 
     "Cait kneels over the paralyzed body."
 
-    show headshot_cait broken_extrabloody_focus at headshot_left, speaking
+    show headshot_cait focus at headshot_left, speaking
     cait "(This might get messy.)"
 
     hide headshot_cait
@@ -164,7 +164,7 @@ label scene_4_interaction_2_kitchen_floor:
 
     # TODO: Sound - Latex gloves
 
-    show headshot_cait broken_extrabloody_focus at headshot_left, speaking
+    show headshot_cait focus at headshot_left, speaking
     cait "(Much better.)"
 
     hide headshot_cait
@@ -234,7 +234,7 @@ label scene_4_interaction_2_d9_neck:
 
     # TODO: Sound - Heartbeat
 
-    show headshot_cait broken_extrabloody_focus at headshot_left, speaking
+    show headshot_cait focus at headshot_left, speaking
     cait "(Still alive. That’s good.)"
 
     hide headshot_cait
@@ -308,7 +308,7 @@ label scene_4_interaction_2_d9_clothed:
 
     show bg d9_exposed_torso at background_freeze
 
-    show headshot_cait broken_extrabloody_focus at headshot_left, speaking
+    show headshot_cait focus at headshot_left, speaking
     cait "(Liquid-access ports aren’t always in standard locations.)"
 
     cait "(I’ll need to find each of D9’s and pump her biofluids to Ada.)"
@@ -322,7 +322,7 @@ label scene_4_interaction_2_d9_clothed:
 
     cait "(I wish I could have known you better.)"
 
-    show headshot_cait broken_extrabloody_focus at headshot_left, speaking
+    show headshot_cait focus at headshot_left, speaking
     cait "(At least you won’t be in pain.)"
 
     hide headshot_cait
@@ -354,7 +354,7 @@ label scene_4_interaction_2_d9_exposed:
 
     show bg d9_tubes_torso at background_freeze
 
-    show headshot_cait broken_extrabloody_focus at headshot_left, speaking
+    show headshot_cait focus at headshot_left, speaking
     cait "(Thank you, D9.)"
 
     cait "(Now I can–)"
@@ -502,7 +502,7 @@ label scene_4_interaction_2_return_armchair:
 
     show expression scene_4_interaction_1_background("living_room") as bg at background_freeze
 
-    show headshot_cait broken_extrabloody_sweet at headshot_left, speaking
+    show headshot_cait sweet at headshot_left, speaking
     cait "Hey there, baby."
 
     cait "I’ve got everything you need right here."

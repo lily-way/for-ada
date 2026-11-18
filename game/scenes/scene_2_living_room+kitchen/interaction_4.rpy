@@ -188,7 +188,7 @@ label scene_2_interaction_4_armchair:
         (0, 0), "bg living_room"
     ) as bg at background_freeze
 
-    show headshot_cait broken_sweet at headshot_left, speaking
+    show headshot_cait sweet at headshot_left, speaking
     cait "Don’t worry, baby…"
     cait "I’m going to get you help."
 
@@ -272,7 +272,7 @@ label scene_2_interaction_4_door:
 
             # play sound "audio/zipper.mp3"
 
-            show headshot_cait broken_raincoat_focus at headshot_left, speaking
+            show headshot_cait focus at headshot_left, speaking
             cait "(Don’t worry, Ada…)"
             cait "(I’ll save you.)"
 
