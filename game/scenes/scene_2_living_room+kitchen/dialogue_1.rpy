@@ -18,6 +18,8 @@ label scene_2_dialogue_1:
     ) as bg at background_fixed
     with fade
 
+    show ada sleepy at sprite_right, speaking
+
     show headshot_cait smile at headshot_left, speaking
     cait "Ada? Are you awake?"
 
