@@ -7,7 +7,7 @@ label scene_2_dialogue_1:
     pause 1.0
 
     scene expression Solid("#000000")
-
+    with fade
     play sound "audio/sound_effects/door_close.mp3"
     pause 0.8
 
