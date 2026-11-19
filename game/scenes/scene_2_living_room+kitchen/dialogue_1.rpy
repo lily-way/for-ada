@@ -9,8 +9,7 @@ label scene_2_dialogue_1:
     scene expression Solid("#000000")
 
     play sound "audio/sound_effects/door_close.mp3"
-    $ duration = renpy.music.get_duration("sound")
-    $ renpy.pause(duration, hard=True)
+    pause 0.8
 
     scene expression Composite(
         (2300, 1200),
@@ -18,8 +17,6 @@ label scene_2_dialogue_1:
         (0, 0), "bg living_room"
     ) as bg at background_fixed
     with fade
-
-    show ada neutral at sprite_right, not_speaking
 
     show headshot_cait smile at headshot_left, speaking
     cait "Ada? Are you awake?"

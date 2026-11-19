@@ -444,10 +444,12 @@ label scene_2_interaction_2_rabbit_cut:
 
             $ progress_interactions = scene_2_interaction_2_rabbit_cut_objects
 
+            play sound "audio/sound_effects/chop_meat.mp3"
+
             show expression scene_2_interaction_2_countertop(
                 "ingredient_rabbit_cut"
             ) as bg at background_pan
-            with Fade(0.3, 0.5, 0.3)
+            with Fade(0.3, 1.0, 0.3)
 
             call screen interaction_screen(scene_2_interaction_2_rabbit_cut_objects)
             call expression _return
@@ -458,6 +460,8 @@ label scene_2_interaction_2_rabbit_cut:
 label scene_2_interaction_2_rabbit_pot:
 
     $ scene_2_interaction_2_rabbit_done = True
+
+    play sound "audio/sound_effects/sizzle_meat.mp3"
 
     show expression scene_2_interaction_2_countertop() as bg at background_pan
 
@@ -471,6 +475,8 @@ label scene_2_interaction_2_rabbit_pot:
 label scene_2_interaction_2_broth:
 
     $ scene_2_interaction_2_broth_done = True
+
+    play sound "audio/sound_effects/sizzle_soup.mp3"
 
     show expression scene_2_interaction_2_countertop() as bg at background_pan
 
@@ -523,6 +529,9 @@ label scene_2_interaction_2_cut_apiaceae:
 
     $ scene_2_interaction_2_apiaceae_cut = True
 
+    play sound "audio/sound_effects/chop_veg1.mp3"
+    pause 1.0
+
     if scene_2_interaction_2_crucifer_cut:
 
         show expression scene_2_interaction_2_countertop(
@@ -537,12 +546,16 @@ label scene_2_interaction_2_cut_apiaceae:
             "ingredient_crucifer"
         ) as bg at background_pan
 
+    pause 1.0
     return
 
 
 label scene_2_interaction_2_cut_crucifer:
 
     $ scene_2_interaction_2_crucifer_cut = True
+
+    play sound "audio/sound_effects/chop_veg2.mp3"
+    pause 1.0
 
     if scene_2_interaction_2_apiaceae_cut:
 
@@ -558,12 +571,15 @@ label scene_2_interaction_2_cut_crucifer:
             "ingredient_crucifer_cut"
         ) as bg at background_pan
 
+    pause 1.0
     return
 
 
 label scene_2_interaction_2_vegetables_pot:
 
     $ scene_2_interaction_2_vegetables_done = True
+
+    play sound "audio/sound_effects/sizzle_veg.mp3"
 
     show expression scene_2_interaction_2_countertop() as bg at background_pan
 
@@ -578,7 +594,9 @@ label scene_2_interaction_2_pot:
 
     scene bg countertop_pot_closed at background_freeze
 
-    # play sound "audio/pot_clank.mp3"
+    play sound "audio/sound_effects/pot_lid_clank.mp3"
+
+    pause 1.0
 
     show headshot_cait smile at headshot_left, speaking
     cait "(And it all goes in the dutch oven.)"
