@@ -61,7 +61,7 @@ define scene_3_interaction_3_exposed_organs_objects = [
     Interaction(
         name="martin_exposed_organs",
         interaction_type="interact",
-        area=(869, 111, 479, 384),
+        area=(872, 77, 472, 408),
         action="scene_3_interaction_3_exposed_organs",
         completed="scene_3_interaction_3_exposed_organs_done",
         mandatory=True

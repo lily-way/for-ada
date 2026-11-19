@@ -21,7 +21,7 @@ define scene_3_interaction_4_clothed_torso_objects = [
     Interaction(
         name="wife_clothed_torso",
         interaction_type="interact",
-        area=(879, 116, 613, 1053),
+        area=(763, 5, 695, 1073),
         action="scene_3_interaction_4_clothed_torso",
         completed="scene_3_interaction_4_clothed_torso_done",
         mandatory=True

@@ -62,7 +62,7 @@ define cait = Character(
     show_accent_color=cait_color,
     callback=dialogue_blip,
     cb_blip="audio/characters/cait.wav",
-    cb_blip_delay=0.04
+    cb_blip_delay=0.01
 )
 
 define ada = Character(
@@ -71,7 +71,7 @@ define ada = Character(
     show_accent_color=ada_color,
     callback=dialogue_blip,
     cb_blip="audio/characters/ada.wav",
-    cb_blip_delay=0.04
+    cb_blip_delay=0.01
 )
 
 define martin = Character(
@@ -80,7 +80,7 @@ define martin = Character(
     show_accent_color=martin_color,
     callback=dialogue_blip,
     cb_blip="audio/characters/martin.wav",
-    cb_blip_delay=0.05
+    cb_blip_delay=0.02
 )
 
 define d9 = Character(
@@ -96,5 +96,24 @@ define martins_wife = Character(
     show_accent_color=martins_wife_color,
     callback=dialogue_blip,
     cb_blip="audio/characters/wife.wav",
-    cb_blip_delay=0.04
+    cb_blip_delay=0.01
 )
+
+define young_cait = Character(
+    "Young Cait",
+    who_color=cait_color,
+    show_accent_color=cait_color,
+    callback=dialogue_blip,
+    cb_blip="audio/characters/cait.wav",
+    cb_blip_delay=0.01
+)
+
+define young_ada = Character(
+    "Young Ada",
+    who_color=ada_color,
+    show_accent_color=ada_color,
+    callback=dialogue_blip,
+    cb_blip="audio/characters/ada.wav",
+    cb_blip_delay=0.01
+)
+

@@ -40,14 +40,14 @@ label scene_4_interaction_5:
     scene bg ada_healthy_neither at background_fixed
     with fade
 
-    show headshot_cait worry at headshot_left, speaking
+    show headshot_cait bloody_worry at headshot_left, speaking
     cait "What a horrible night…"
 
     cait "I’m glad you aren’t awake to see all this."
 
     cait "You deserve better."
 
-    show headshot_cait sweet at headshot_left, speaking
+    show headshot_cait bloody_sweet at headshot_left, speaking
     cait "You always have."
 
     hide headshot_cait

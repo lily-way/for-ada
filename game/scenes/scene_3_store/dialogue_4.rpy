@@ -5,7 +5,7 @@
 label scene_3_dialogue_4:
 
     scene bg store at background_fixed
-    with Dissolve(0.5)
+    with fade
 
     show headshot_cait smile at headshot_left, speaking
     cait "(Now I can save her…)"
@@ -35,8 +35,8 @@ label scene_3_dialogue_4:
 
     hide headshot_cait
 
-    scene bg rainstorm at background_fixed
-    with Dissolve(0.5)
+    scene expression Solid("#000000")
+    with fade
 
     # play music "audio/body_drag_loop.mp3"
     # play sound "audio/rainstorm.mp3" loop
@@ -58,8 +58,5 @@ label scene_3_dialogue_4:
     cait "(My Ada.)"
 
     hide headshot_cait
-
-    scene expression Solid("#000000")
-    with Dissolve(0.5)
 
     return

@@ -3,21 +3,17 @@
 ################################################################################
 
 label scene_4_dialogue_1:
-
-    scene expression Solid("#000000")
-    with Dissolve(0.5)
-
     scene expression Composite(
         (2300, 1200),
         (0, 0), "bg light_cycle_4",
         (0, 0), "bg living_room"
     ) as bg at background_fixed
-    with Dissolve(0.5)
+    with fade
 
-    show headshot_cait focus at headshot_left, speaking
+    show headshot_cait bloody_focus at headshot_left, speaking
     cait "*huff* *huff*"
 
-    show headshot_cait sweet at headshot_left, speaking
+    show headshot_cait bloody_sweet at headshot_left, speaking
     cait "Baby, I’m home."
 
     cait "Let’s get you some fluids, yeah?"
@@ -28,21 +24,21 @@ label scene_4_dialogue_1:
 
     call single_blur
 
-    show headshot_cait PO at headshot_left, speaking
+    show headshot_cait bloody_pissed at headshot_left, speaking
     cait "(Ugh…)"
 
     hide headshot_cait
 
     call single_blur
 
-    show headshot_cait PO at headshot_left, speaking
+    show headshot_cait bloody_pissed at headshot_left, speaking
     cait "(I can’t get distracted…)"
 
     hide headshot_cait
 
     call single_blur
 
-    show headshot_cait PO at headshot_left, speaking
+    show headshot_cait bloody_pissed at headshot_left, speaking
     cait "(Not now…)"
 
     hide headshot_cait
@@ -65,7 +61,7 @@ label scene_4_dialogue_1:
 
             show layer master
 
-    show headshot_cait focus at headshot_left, speaking
+    show headshot_cait bloody_focus at headshot_left, speaking
     cait "(Come on. I can do this.)"
 
     cait "(I’ll set up in the kitchen.)"

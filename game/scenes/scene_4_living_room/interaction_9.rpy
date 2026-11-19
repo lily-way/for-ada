@@ -19,7 +19,7 @@ define scene_4_interaction_9_objects = [
     Interaction(
         name="ada_torso",
         interaction_type="interact",
-        area=(750, 250, 850, 850),
+        area=(1054, 638, 174, 293),
         action="scene_4_interaction_9_torso",
         completed="scene_4_interaction_9_torso_done",
         mandatory=True
@@ -75,7 +75,7 @@ label scene_4_interaction_9_torso:
     scene bg ada_healthy_both at background_fixed
     with fade
 
-    show headshot_cait sweet at headshot_left, speaking
+    show headshot_cait bloody_sweet at headshot_left, speaking
     cait "You and your heart."
 
     cait "You’ve always worn it on your sleeve."
