@@ -185,10 +185,10 @@ label scene_1_interaction_1_wine:
     cait "(But Ada loves this sort of thing.)"
 
     show headshot_cait focus at headshot_left, speaking
-    cait "(Historical homeworld culture, literature, food... It just appeals to her. She finds it...)"
+    cait "(Historical homeworld culture, literature, food... It just appeals to her.)"
 
     show headshot_cait smile at headshot_left, speaking
-    cait "(Delightful.)"
+    cait "(She finds it so fascinating.)"
 
     show headshot_cait focus at headshot_left, speaking
     cait "(Now, let's see if I can find those cases Martin mentioned.)"

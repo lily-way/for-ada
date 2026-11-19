@@ -4,6 +4,8 @@
 
 label scene_1_dialogue_1:
 
+    pause 3.0
+
     scene expression Solid("#000000")
     show expression Text("Chaff-6", size=100, color="#FFFFFF") as chapter_title:
         xalign 0.5
@@ -16,15 +18,17 @@ label scene_1_dialogue_1:
     with fade
 
     play sound "audio/sound_effects/shop_door_bell.mp3"
-
-    $ renpy.pause(0.1, hard=True)
+    $ duration = renpy.music.get_duration("sound")
+    $ renpy.pause(duration, hard=True)
 
     while renpy.music.is_playing(channel="sound"):
         $ renpy.pause(0.1, hard=True)
 
     show martin laugh at sprite_middle(y=45), speaking
     with fade
-    
+
+    $ renpy.pause(0.1, hard=True)
+
     martin "There she is! My favorite recluse!"
 
     show martin neutral at sprite_middle(y=45), speaking
@@ -55,6 +59,8 @@ label scene_1_dialogue_1:
     cait "Fifteen years. Thanks, Martin. I'll let her know."
 
     hide headshot_cait
+    
     hide martin
+    with fade
 
     return
