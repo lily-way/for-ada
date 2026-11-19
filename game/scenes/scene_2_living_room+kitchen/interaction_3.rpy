@@ -120,7 +120,7 @@ label scene_2_interaction_3_armchair:
 
     hide headshot_cait
 
-    # play music "audio/heartbeat_fast.mp3"
+    play music "audio/loops/heartbeat_fast.mp3" loop
 
     "Cait places her hand on Ada’s chest."
     "Her feeble heart beats wildly."
@@ -141,8 +141,6 @@ label scene_2_interaction_3_armchair:
 
     show ada deathly at sprite_right, not_speaking
 
-    # play music "audio/heartbeat_med.mp3"
-
     show headshot_cait panic at headshot_left, speaking
     cait "Ada?"
     cait "Hey. Ada!"
@@ -162,22 +160,33 @@ label scene_2_interaction_3_armchair:
     scene expression Solid("#000000")
     with Dissolve(0.5)
 
-    # play music "audio/heartbeat_slow.mp3"
+    play music "audio/loops/heartbeat_medium.mp3" loop
+
+    play sound "audio/human_sounds/cait_breath1.mp3"
+
+    pause 2.0
+
+    cait "..."
+
+    play sound "audio/human_sounds/cait_breath2.mp3"
+
+    pause 2.0
+
+    cait "..."
+
+    play sound "audio/human_sounds/cait_breath3.mp3"
+
+    pause 2.0
 
     stop music
 
-    # play sound "audio/breath.mp3"
-
-    show headshot_cait panic at headshot_left, speaking
     cait "..."
 
-    # play sound "audio/breath.mp3"
+    pause 1.0
 
-    cait "..."
+    play sound "audio/human_sounds/cait_scream2.mp3"
 
-    hide headshot_cait
-
-    # play sound "audio/scream.mp3"
+    pause 6.0
 
     $ scene_2_interaction_3_armchair_done = True
 
