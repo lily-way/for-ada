@@ -26,7 +26,9 @@ label scene_3_dialogue_2:
 
     hide headshot_cait
 
-    # play sound "audio/heavy_footsteps.mp3"
+    play sound "audio/sound_effects/stairs_martin.mp3"
+
+    pause 1.0
 
     show martin PJs_concerned at sprite_right, not_speaking
 
@@ -82,7 +84,7 @@ label scene_3_dialogue_2:
         "Stab him":
             pass
 
-    # play sound "audio/stab.mp3"
+    play sound "audio/sound_effects/stab_martin_1.mp3"
 
     show martin horror_1 at sprite_right, speaking
     martin "Hrrk!"
@@ -91,7 +93,7 @@ label scene_3_dialogue_2:
         "Stab him":
             pass
 
-    # play sound "audio/stab.mp3"
+    play sound "audio/sound_effects/stab_martin_2.mp3"
 
     show martin horror_2 at sprite_right, speaking
     martin "Ghhhhhhhk!"
@@ -100,13 +102,15 @@ label scene_3_dialogue_2:
         "Stab him":
             pass
 
-    # play sound "audio/stab.mp3"
+    play sound "audio/sound_effects/stab_martin_3.mp3"
 
     show martin horror_3 at sprite_right, speaking
     martin "hhhhAAAAAAAAAAAAA!!!!!!!!!!!!!!!"
 
     hide martin
 
-    # play sound "audio/body_thud.mp3"
+    play sound "audio/sound_effects/body_thud.mp3"
+
+    pause 0.5
 
     return

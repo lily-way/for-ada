@@ -139,7 +139,9 @@ label scene_3_interaction_1_door:
 
         "Bang on door":
 
-            # play sound "audio/bang_on_door.mp3"
+            play sound "audio/sound_effects/door_bang.mp3"
+
+            pause 1.0
 
             show headshot_cait focus at headshot_left, speaking
             cait "(Nothing.)"
@@ -168,7 +170,9 @@ label scene_3_interaction_1_window:
 
         "Bang on window":
 
-            # play sound "audio/bang_on_window.mp3"
+            play sound "audio/sound_effects/window_bang.mp3"
+
+            pause 1.0
 
             show headshot_cait focus at headshot_left, speaking
             cait "(Nothing.)"
@@ -200,9 +204,11 @@ label scene_3_interaction_1_smash_window:
 
         "Smash window":
 
-            # play sound "audio/window_smash.mp3"
+            play sound "audio/sound_effects/window_smash.mp3"
 
             scene bg storefront_no_window at background_freeze
+
+            pause 1.0
 
             show headshot_cait focus at headshot_left, speaking
             cait "(There we go.)"

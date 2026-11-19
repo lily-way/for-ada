@@ -8,6 +8,7 @@ label scene_3_dialogue_3:
     with Dissolve(0.5)
 
     "Cait didn’t look up when she heard the footsteps coming down the staircase."
+    play sound "audio/human_sounds/amia4.mp3"
     "Or even when she heard the guttural scream that followed."
     "All the grocer’s wife saw a dark figure hunched over the bloodied body of her husband, pulling sinewy organs from his open chest."
     "Cait finished relieving the man of his lungs and stood up to her full height over him."
@@ -32,7 +33,9 @@ label scene_3_dialogue_3:
         "Place lungs in cooler":
             pass
 
-    # play sound "audio/gas_release.mp3"
+    play sound "audio/sound_effects/gas_release.mp3"
+
+    pause 0.5
 
     show martins_wife horror at sprite_right, speaking
     martins_wife "D9!!! Priority one, protection mode!!!"
@@ -47,7 +50,9 @@ label scene_3_dialogue_3:
         "Retrieve garden spade from Martin’s neck":
             pass
 
-    # play sound "audio/stab.mp3"
+    play sound "audio/sound_effects/stab_removal.mp3"
+
+    pause 0.5
 
     show martins_wife horror at sprite_right, speaking
     martins_wife "D9, please–"
@@ -63,7 +68,7 @@ label scene_3_dialogue_3:
 
         "Hit her in the head":
 
-            # play sound "audio/crack_thunk.mp3"
+            play sound "audio/sound_effects/stab_wife_head_1.mp3"
 
             show martins_wife headbleed at sprite_right, speaking
             martins_wife "Huhhhhh…"
@@ -74,14 +79,14 @@ label scene_3_dialogue_3:
                 "Hit her again":
                     pass
 
-            # play sound "audio/crunch.mp3"
+            play sound "audio/sound_effects/stab_wife_head_2.mp3"
 
             show martins_wife headbleed at sprite_right, speaking
             martins_wife "Hnnnnhhh…"
 
         "Stab her in the eye":
 
-            # play sound "audio/eyesquish.mp3"
+            play sound "audio/sound_effects/stab_wife_eye_1.mp3"
 
             show martins_wife eyebleed at sprite_right, speaking
             martins_wife "EeeeaaAAAAAA!!!!"
@@ -92,7 +97,7 @@ label scene_3_dialogue_3:
                 "Push it deeper":
                     pass
 
-            # play sound "audio/brainsquish.mp3"
+            play sound "audio/sound_effects/stab_wife_eye_2.mp3"
 
             show martins_wife eyebleed at sprite_right, speaking
             martins_wife "Eeeeeeeuhhhhh…"

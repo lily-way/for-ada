@@ -121,7 +121,9 @@ label scene_3_interaction_4_clothed_torso:
 
         "Cut through clothing":
 
-            # TODO: Sound - tearing_fabric
+            play sound "audio/sound_effects/tear_fabric.mp3"
+
+            pause 0.5
 
             scene bg wife_exposed_torso at background_fixed
 
@@ -143,11 +145,10 @@ label scene_3_interaction_4_exposed_torso:
 
         "Open chest cavity":
 
-            # TODO: Sound - fleshpeel
-            # TODO: Sound - bonesaw
+            play sound "audio/sound_effects/chop_meat.mp3"
 
             scene bg wife_exposed_organs at background_fixed
-            with fade
+            with Fade(0.3, 1.0, 0.3)
 
             show headshot_cait focus at headshot_left, speaking
             cait "(A brand-new heart.)"
@@ -174,7 +175,9 @@ label scene_3_interaction_4_exposed_organs:
 
         "Take heart":
 
-            # TODO: Sound - fleshscoop
+            play sound "audio/sound_effects/organ_removal.mp3"
+
+            pause 0.5
 
             scene bg wife_no_heart at background_fixed
 
@@ -182,7 +185,9 @@ label scene_3_interaction_4_exposed_organs:
 
                 "Place heart in cooler":
 
-                    # TODO: Sound - gas_release
+                    play sound "audio/sound_effects/gas_release.mp3"
+    
+                    pause 0.5
 
                     $ scene_3_interaction_4_exposed_organs_done = True
 
