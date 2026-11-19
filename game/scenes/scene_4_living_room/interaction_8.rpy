@@ -22,7 +22,7 @@ define scene_4_interaction_8_file_objects = [
     Interaction(
         name="hospital_calendar",
         interaction_type="observe",
-        area=(267, 158, 163, 213),
+        area=(167, 77, 188, 278),
         action="scene_4_interaction_8_calendar",
         completed="scene_4_interaction_8_calendar_done",
         mandatory=False
@@ -31,7 +31,7 @@ define scene_4_interaction_8_file_objects = [
     Interaction(
         name="hospital_window",
         interaction_type="observe",
-        area=(520, 23, 841, 606),
+        area=(523, 0, 844, 654),
         action="scene_4_interaction_8_window",
         completed="scene_4_interaction_8_window_done",
         mandatory=False
@@ -40,7 +40,7 @@ define scene_4_interaction_8_file_objects = [
     Interaction(
         name="hospital_repair_file",
         interaction_type="interact",
-        area=(1419, 597, 107, 59),
+        area=(1514, 606, 116, 71),
         action="scene_4_interaction_8_file",
         completed="scene_4_interaction_8_file_done",
         mandatory=True
@@ -58,7 +58,7 @@ define scene_4_interaction_8_bed_objects = [
     Interaction(
         name="hospital_calendar",
         interaction_type="observe",
-        area=(267, 158, 163, 213),
+        area=(167, 77, 188, 278),
         action="scene_4_interaction_8_calendar",
         completed="scene_4_interaction_8_calendar_done",
         mandatory=False
@@ -67,7 +67,7 @@ define scene_4_interaction_8_bed_objects = [
     Interaction(
         name="hospital_window",
         interaction_type="observe",
-        area=(520, 23, 841, 606),
+        area=(523, 0, 844, 654),
         action="scene_4_interaction_8_window",
         completed="scene_4_interaction_8_window_done",
         mandatory=False
@@ -76,7 +76,7 @@ define scene_4_interaction_8_bed_objects = [
     Interaction(
         name="hospital_bed_1",
         interaction_type="interact",
-        area=(910, 736, 978, 308),
+        area=(913, 773, 1162, 417),
         action="scene_4_interaction_8_bed",
         completed="scene_4_interaction_8_bed_done",
         mandatory=True
@@ -85,7 +85,7 @@ define scene_4_interaction_8_bed_objects = [
     Interaction(
         name="hospital_bed_2",
         interaction_type="interact",
-        area=(1591, 547, 386, 279),
+        area=(1725, 550, 412, 259),
         action="scene_4_interaction_8_bed",
         completed="scene_4_interaction_8_bed_done",
         mandatory=True
@@ -104,7 +104,7 @@ label scene_4_interaction_8:
     $ progress_open = False
 
     scene expression scene_4_interaction_4_background() as bg at background_pan
-    with fade
+    with Fade(0.5, 2.0, 0.5)
 
     $ progress_interactions = scene_4_interaction_8_file_objects
 
@@ -149,13 +149,13 @@ label scene_4_interaction_8_calendar:
     show expression scene_4_interaction_4_background() as bg at background_freeze
 
     show headshot_cait young_worry at headshot_left, speaking
-    cait "(The deadline for grant proposals is coming up fast.)"
+    young_cait "(The deadline for grant proposals is coming up fast.)"
 
-    cait "(I’ll need to start drafting if I want funding for the upcoming term.)"
+    young_cait "(I’ll need to start drafting if I want funding for the upcoming term.)"
 
-    cait "(But who would fund me, at this point…?)"
+    young_cait "(But who would fund me, at this point…?)"
 
-    cait "(…)"
+    young_cait "(…)"
 
     hide headshot_cait
 
@@ -178,19 +178,19 @@ label scene_4_interaction_8_window:
     show expression scene_4_interaction_4_background() as bg at background_freeze
 
     show headshot_cait young_focus at headshot_left, speaking
-    cait "(I wonder if Ada would like to see the farm.)"
+    young_cait "(I wonder if Ada would like to see the farm.)"
 
     show headshot_cait young_smile at headshot_left, speaking
-    cait "(I’m sure the g-3s would love her.)"
+    young_cait "(I’m sure the g-3s would love her.)"
 
     show headshot_cait young_pissed at headshot_left, speaking
-    cait "(More than me, anyway…)"
+    young_cait "(More than me, anyway…)"
 
     show headshot_cait young_focus at headshot_left, speaking
-    cait "(I just wouldn’t want her to feel disoriented.)"
+    young_cait "(I just wouldn’t want her to feel disoriented.)"
 
     show headshot_cait young_smile at headshot_left, speaking
-    cait "(Maybe we can think about it when I get closer to a working prototype.)"
+    young_cait "(Maybe we can think about it when I get closer to a working prototype.)"
 
     hide headshot_cait
 
@@ -213,7 +213,7 @@ label scene_4_interaction_8_file:
     show expression scene_4_interaction_4_background() as bg at background_freeze
 
     show headshot_cait young_focus at headshot_left, speaking
-    cait "(I should review my notes.)"
+    young_cait "(I should review my notes.)"
 
     hide headshot_cait
 
@@ -224,21 +224,21 @@ label scene_4_interaction_8_file:
 
     # TODO: Sound - Page flip
 
-    "Log Entry #30."
+    "File" "Log Entry #30."
 
-    "Ada’s owners have moved off-planet."
+    "File" "Ada’s owners have moved off-planet."
 
-    "I think I’m close to a breakthrough, but they didn’t want to stick around."
+    "File" "I think I’m close to a breakthrough, but they didn’t want to stick around."
 
-    "But maybe this is the best for everyone."
+    "File" "But maybe this is the best for everyone."
 
-    "For one, I no longer need their permission to modify Ada’s physical frame."
+    "File" "For one, I no longer need their permission to modify Ada’s physical frame."
 
-    "I’ve made surgical improvements to the base D4 model that Ada seems much more comfortable with."
+    "File" "I’ve made surgical improvements to the base D4 model that Ada seems much more comfortable with."
 
-    "Once I can correct her memory, she’ll be able to choose where she goes next."
+    "File" "Once I can correct her memory, she’ll be able to choose where she goes next."
 
-    "I look forward to helping her become independent."
+    "File" "I look forward to helping her become independent."
 
     $ scene_4_interaction_8_file_done = True
 
@@ -262,28 +262,28 @@ label scene_4_interaction_8_bed:
     show expression scene_4_interaction_4_background() as bg at background_freeze
 
     show headshot_ada young_smile at headshot_right, speaking
-    ada "Stop me if you’ve heard this one before."
+    young_ada "Stop me if you’ve heard this one before."
 
     hide headshot_ada
 
     show headshot_cait young_smile at headshot_left, speaking
-    cait "You think I haven’t heard them all before yet?"
+    young_cait "You think I haven’t heard them all before yet?"
 
     hide headshot_cait
 
     show headshot_ada young_thoughtful at headshot_right, speaking
-    ada "Well, maybe…"
+    young_ada "Well, maybe…"
 
     show headshot_ada young_smile at headshot_right, speaking
-    ada "but I still want to try to entertain you!"
+    young_ada "but I still want to try to entertain you!"
 
     show headshot_ada young_mischief at headshot_right, speaking
-    ada "I promise I’m more interesting than whatever’s wrong with my brain."
+    young_ada "I promise I’m more interesting than whatever’s wrong with my brain."
 
     hide headshot_ada
 
     show headshot_cait young_sweet at headshot_left, speaking
-    cait "I believe you."
+    young_cait "I believe you."
 
     hide headshot_cait
 

@@ -22,7 +22,7 @@ define scene_4_interaction_10_file_objects = [
     Interaction(
         name="hospital_calendar",
         interaction_type="observe",
-        area=(267, 158, 163, 213),
+        area=(167, 77, 188, 278),
         action="scene_4_interaction_10_calendar",
         completed="scene_4_interaction_10_calendar_done",
         mandatory=False
@@ -31,7 +31,7 @@ define scene_4_interaction_10_file_objects = [
     Interaction(
         name="hospital_window",
         interaction_type="observe",
-        area=(520, 23, 841, 606),
+        area=(523, 0, 844, 654),
         action="scene_4_interaction_10_window",
         completed="scene_4_interaction_10_window_done",
         mandatory=False
@@ -40,7 +40,7 @@ define scene_4_interaction_10_file_objects = [
     Interaction(
         name="hospital_repair_file",
         interaction_type="interact",
-        area=(1419, 597, 107, 59),
+        area=(1514, 606, 116, 71),
         action="scene_4_interaction_10_file",
         completed="scene_4_interaction_10_file_done",
         mandatory=True
@@ -58,7 +58,7 @@ define scene_4_interaction_10_bed_objects = [
     Interaction(
         name="hospital_calendar",
         interaction_type="observe",
-        area=(267, 158, 163, 213),
+        area=(167, 77, 188, 278),
         action="scene_4_interaction_10_calendar",
         completed="scene_4_interaction_10_calendar_done",
         mandatory=False
@@ -67,7 +67,7 @@ define scene_4_interaction_10_bed_objects = [
     Interaction(
         name="hospital_window",
         interaction_type="observe",
-        area=(520, 23, 841, 606),
+        area=(523, 0, 844, 654),
         action="scene_4_interaction_10_window",
         completed="scene_4_interaction_10_window_done",
         mandatory=False
@@ -76,7 +76,7 @@ define scene_4_interaction_10_bed_objects = [
     Interaction(
         name="hospital_bed_1",
         interaction_type="interact",
-        area=(910, 736, 978, 308),
+        area=(913, 773, 1162, 417),
         action="scene_4_interaction_10_bed",
         completed="scene_4_interaction_10_bed_done",
         mandatory=True
@@ -85,7 +85,7 @@ define scene_4_interaction_10_bed_objects = [
     Interaction(
         name="hospital_bed_2",
         interaction_type="interact",
-        area=(1591, 547, 386, 279),
+        area=(1725, 550, 412, 259),
         action="scene_4_interaction_10_bed",
         completed="scene_4_interaction_10_bed_done",
         mandatory=True
@@ -104,7 +104,7 @@ label scene_4_interaction_10:
     $ progress_open = False
 
     scene expression scene_4_interaction_4_background() as bg at background_pan
-    with fade
+    with Fade(0.5, 2.0, 0.5)
 
     $ progress_interactions = scene_4_interaction_10_file_objects
 
@@ -149,16 +149,16 @@ label scene_4_interaction_10_calendar:
     show expression scene_4_interaction_4_background() as bg at background_freeze
 
     show headshot_cait young_focus at headshot_left, speaking
-    cait "(...)"
+    young_cait "(...)"
 
-    cait "(I missed the grant proposal deadline.)"
+    young_cait "(I missed the grant proposal deadline.)"
 
-    cait "(I won’t have funding for the next term.)"
+    young_cait "(I won’t have funding for the next term.)"
 
-    cait "(...)"
+    young_cait "(...)"
 
     show headshot_cait young_smile at headshot_left, speaking
-    cait "(...)"
+    young_cait "(...)"
 
     hide headshot_cait
 
@@ -181,11 +181,11 @@ label scene_4_interaction_10_window:
     show expression scene_4_interaction_4_background() as bg at background_freeze
 
     show headshot_cait young_focus at headshot_left, speaking
-    cait "(Smells like rain today.)"
+    young_cait "(Smells like rain today.)"
 
-    cait "(Maybe Ada and I will go for a walk after our session.)"
+    young_cait "(Maybe Ada and I will go for a walk after our session.)"
 
-    cait "(I’d like to pick up some more reading material for her.)"
+    young_cait "(I’d like to pick up some more reading material for her.)"
 
     hide headshot_cait
 
@@ -208,19 +208,19 @@ label scene_4_interaction_10_file:
     show expression scene_4_interaction_4_background() as bg at background_freeze
 
     show headshot_cait young_focus at headshot_left, speaking
-    cait "(I should review my notes.)"
+    young_cait "(I should review my notes.)"
 
-    cait "(...)"
+    young_cait "(...)"
 
-    cait "(But why?)"
+    young_cait "(But why?)"
 
     show headshot_cait young_worry at headshot_left, speaking
-    cait "(It’s not like anyone is actually reading them.)"
+    young_cait "(It’s not like anyone is actually reading them.)"
 
     show headshot_cait young_focus at headshot_left, speaking
-    cait "(...)"
+    young_cait "(...)"
 
-    cait "(I think I’ll just see what Ada thinks.)"
+    young_cait "(I think I’ll just see what Ada thinks.)"
 
     hide headshot_cait
 
@@ -246,73 +246,73 @@ label scene_4_interaction_10_bed:
     show expression scene_4_interaction_4_background() as bg at background_freeze
 
     show headshot_ada young_thoughtful at headshot_right, speaking
-    ada "I wish I wasn’t an android."
+    young_ada "I wish I wasn’t an android."
 
     hide headshot_ada
 
     show headshot_cait young_focus at headshot_left, speaking
-    cait "What makes you say that?"
+    young_cait "What makes you say that?"
 
     hide headshot_cait
 
     show headshot_ada young_thoughtful at headshot_right, speaking
-    ada "Well, I’ll use you for an example."
+    young_ada "Well, I’ll use you for an example."
 
-    ada "You’ve been studying me for weeks now…"
+    young_ada "You’ve been studying me for weeks now…"
 
-    ada "But it’s only because you’re this great biosyntheticist and there’s something wrong with me."
+    young_ada "But it’s only because you’re this great biosyntheticist and there’s something wrong with me."
 
-    ada "...Maybe I wish you were just interested in me."
+    young_ada "...Maybe I wish you were just interested in me."
 
     hide headshot_ada
 
     show headshot_cait young_focus at headshot_left, speaking
-    cait "..."
+    young_cait "..."
 
-    cait "Why do you care about me?"
+    young_cait "Why do you care about me?"
 
-    cait "You’ve only known me for eight hours."
+    young_cait "You’ve only known me for eight hours."
 
     hide headshot_cait
 
     show headshot_ada young_thoughtful at headshot_right, speaking
-    ada "Yes, but you’ve known me for much longer."
+    young_ada "Yes, but you’ve known me for much longer."
 
     show headshot_ada young_neutral at headshot_right, speaking
-    ada "I can tell by the way you treat me."
+    young_ada "I can tell by the way you treat me."
 
-    ada "And if I’ve liked you this much in these past few hours…"
+    young_ada "And if I’ve liked you this much in these past few hours…"
 
-    ada "Then presumably I’ve also liked you in all of my eight-hour increments."
+    young_ada "Then presumably I’ve also liked you in all of my eight-hour increments."
 
     show headshot_ada young_thoughtful at headshot_right, speaking
-    ada "We basically have a relationship of many hours."
+    young_ada "We basically have a relationship of many hours."
 
     hide headshot_ada
 
     show headshot_cait young_smile at headshot_left, speaking
-    cait "I don’t think that’s how it works."
+    young_cait "I don’t think that’s how it works."
 
     hide headshot_cait
 
     show headshot_ada young_neutral at headshot_right, speaking
-    ada "I just wish you were interested in me for non-android reasons."
+    young_ada "I just wish you were interested in me for non-android reasons."
 
     hide headshot_ada
 
     show headshot_cait young_focus at headshot_left, speaking
-    cait "..."
+    young_cait "..."
 
-    cait "Maybe I am."
+    young_cait "Maybe I am."
 
     hide headshot_cait
 
     show headshot_ada young_neutral at headshot_right, speaking
-    ada "Heh."
+    young_ada "Heh."
 
-    ada "I wish I wasn’t an android so that I could believe you."
+    young_ada "I wish I wasn’t an android so that I could believe you."
 
-    ada "Or even that I didn’t know."
+    young_ada "Or even that I didn’t know."
 
     hide headshot_ada
 

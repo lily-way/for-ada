@@ -68,8 +68,8 @@ screen interaction_screen(interactions):
 
                 padding (0, 0)
 
-                # background Solid("#00FF0066")
-                # hover_background Solid("#00FF0099")
+                background Solid("#00FF0066")
+                hover_background Solid("#00FF0099")
 
                 mouse interaction.get_cursor()
 

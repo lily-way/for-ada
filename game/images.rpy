@@ -196,7 +196,7 @@ image ingredient_veggies_pot = "images/cooking_ingredients/Veggies_Pot.png"
 
 image bg martin_clothed_torso = "images/backgrounds/martin_clothed_torso.png"
 image bg martin_exposed_torso = "images/backgrounds/martin_exposed_torso.png"
-image bg martin_exposed_ribcage = "images/backgrounds/MartinFloor3.png"
+image bg martin_exposed_ribcage = "images/backgrounds/martin_incision.png"
 image bg martin_exposed_organs = "images/backgrounds/martin_exposed_organs.png"
 image bg martin_no_lungs = "images/backgrounds/martin_no_lungs.png"
 

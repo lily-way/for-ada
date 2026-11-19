@@ -19,7 +19,7 @@ define scene_4_interaction_9_objects = [
     Interaction(
         name="ada_torso",
         interaction_type="interact",
-        area=(750, 250, 850, 850),
+        area=(1054, 638, 174, 293),
         action="scene_4_interaction_9_torso",
         completed="scene_4_interaction_9_torso_done",
         mandatory=True

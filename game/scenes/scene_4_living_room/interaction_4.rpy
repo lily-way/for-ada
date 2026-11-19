@@ -37,7 +37,7 @@ define scene_4_interaction_4_objects = [
     Interaction(
         name="hospital_window",
         interaction_type="observe",
-        area=(520, 23, 841, 606),
+        area=(523, 0, 844, 654),
         action="scene_4_interaction_4_window",
         completed="scene_4_interaction_4_window_done",
         mandatory=False
@@ -46,7 +46,7 @@ define scene_4_interaction_4_objects = [
     Interaction(
         name="hospital_bed_1",
         interaction_type="observe",
-        area=(910, 736, 978, 308),
+        area=(913, 773, 1162, 417),
         action="scene_4_interaction_4_bed",
         completed="scene_4_interaction_4_bed_done",
         mandatory=False
@@ -55,17 +55,16 @@ define scene_4_interaction_4_objects = [
     Interaction(
         name="hospital_bed_2",
         interaction_type="observe",
-        area=(1591, 547, 386, 279),
+        area=(1725, 550, 412, 259),
         action="scene_4_interaction_4_bed",
         completed="scene_4_interaction_4_bed_done",
         mandatory=False
     ),
 
-
     Interaction(
         name="hospital_calendar",
         interaction_type="observe",
-        area=(267, 158, 163, 213),
+        area=(167, 77, 188, 278),
         action="scene_4_interaction_4_calendar",
         completed="scene_4_interaction_4_calendar_done",
         mandatory=False
@@ -74,7 +73,7 @@ define scene_4_interaction_4_objects = [
     Interaction(
         name="hospital_repair_file",
         interaction_type="interact",
-        area=(1419, 597, 107, 59),
+        area=(1514, 606, 116, 71),
         action="scene_4_interaction_4_file",
         completed="scene_4_interaction_4_file_done",
         mandatory=True
@@ -93,7 +92,7 @@ label scene_4_interaction_4:
     $ progress_open = False
 
     scene expression scene_4_interaction_4_background() as bg at background_pan
-    with fade
+    with Fade(0.5, 2.0, 0.5)
 
     while not scene_4_interaction_4_file_done:
 
@@ -125,18 +124,18 @@ label scene_4_interaction_4_window:
     show expression scene_4_interaction_4_background() as bg at background_freeze
 
     show headshot_cait young_smile at headshot_left, speaking
-    cait "(Chaff-6 is so peaceful.)"
+    young_cait "(Chaff-6 is so peaceful.)"
 
-    cait "(It’s nice to finally have a breath of fresh air.)"
+    young_cait "(It’s nice to finally have a breath of fresh air.)"
 
     show headshot_cait young_focus at headshot_left, speaking
-    cait "(Still, it’s good to keep my skills sharp.)"
+    young_cait "(Still, it’s good to keep my skills sharp.)"
 
     show headshot_cait young_pissed at headshot_left, speaking
-    cait "(I don’t want to be rusty when I go back to work.)"
+    young_cait "(I don’t want to be rusty when I go back to work.)"
 
     show headshot_cait young_focus at headshot_left, speaking
-    cait "(This job should do the trick.)"
+    young_cait "(This job should do the trick.)"
 
     hide headshot_cait
 
@@ -159,14 +158,14 @@ label scene_4_interaction_4_bed:
     show expression scene_4_interaction_4_background() as bg at background_freeze
 
     show headshot_cait young_focus at headshot_left, speaking
-    cait "(The android should be arriving soon…)"
+    young_cait "(The android should be arriving soon…)"
 
-    cait "(Its owners seem exasperated.)"
+    young_cait "(Its owners seem exasperated.)"
 
-    cait "(If I can’t resolve its issues before they move off-planet…)"
+    young_cait "(If I can’t resolve its issues before they move off-planet…)"
 
     show headshot_cait young_worry at headshot_left, speaking
-    cait "(Quite frankly, I don’t know where it’ll end up.)"
+    young_cait "(Quite frankly, I don’t know where it’ll end up.)"
 
     hide headshot_cait
 
@@ -189,20 +188,20 @@ label scene_4_interaction_4_calendar:
     show expression scene_4_interaction_4_background() as bg at background_freeze
 
     show headshot_cait young_focus at headshot_left, speaking
-    cait "(Six months of sabbatical on a farming planet.)"
+    young_cait "(Six months of sabbatical on a farming planet.)"
 
     show headshot_cait young_worry at headshot_left, speaking
-    cait "(Is this really what I want?)"
+    young_cait "(Is this really what I want?)"
 
-    cait "(...)"
+    young_cait "(...)"
 
     show headshot_cait young_focus at headshot_left, speaking
-    cait "(No, I need the break.)"
+    young_cait "(No, I need the break.)"
 
-    cait "(And maybe even more than that…)"
+    young_cait "(And maybe even more than that…)"
 
     show headshot_cait young_pissed at headshot_left, speaking
-    cait "(Academia needs a break from me.)"
+    young_cait "(Academia needs a break from me.)"
 
     hide headshot_cait
 
@@ -225,7 +224,7 @@ label scene_4_interaction_4_file:
     show expression scene_4_interaction_4_background() as bg at background_freeze
 
     show headshot_cait young_focus at headshot_left, speaking
-    cait "(I may as well review my notes while I have time.)"
+    young_cait "(I may as well review my notes while I have time.)"
 
     hide headshot_cait
 
@@ -236,30 +235,30 @@ label scene_4_interaction_4_file:
 
     # TODO: Sound - Page flip
 
-    "Log Entry #1."
+    "File" "Log Entry #1."
 
-    "Owners report major memory and behavioral issues."
+    "File" "Owners report major memory and behavioral issues."
 
-    "The D4 android possesses a consistent sense of self and worldly knowledge, but no memory of its immediate surroundings or duties."
+    "File" "The D4 android possesses a consistent sense of self and worldly knowledge, but no memory of its immediate surroundings or duties."
 
-    "Loss of memory is coupled with non-compliant activity, including the following:"
+    "File" "Loss of memory is coupled with non-compliant activity, including the following:"
 
-    "Cutting or shaving its hair,"
+    "File" "Cutting or shaving its hair,"
 
-    "Reading books and news articles,"
+    "File" "Reading books and news articles,"
 
-    "Self-destruction to breast tissue."
+    "File" "Self-destruction to breast tissue."
 
-    "The D4 is non-responsive to verbal and physical instruction."
+    "File" "The D4 is non-responsive to verbal and physical instruction."
 
     # TODO: Sound - Page flip
 
     show headshot_cait young_worry at headshot_left, speaking
-    cait "(...)"
+    young_cait "(...)"
 
-    cait "(This android is very afraid.)"
+    young_cait "(This android is very afraid.)"
 
-    cait "(I’ll need to speak to it myself to understand.)"
+    young_cait "(I’ll need to speak to it myself to understand.)"
 
     hide headshot_cait
 
