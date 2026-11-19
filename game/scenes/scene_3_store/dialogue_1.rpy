@@ -12,7 +12,9 @@ label scene_3_dialogue_1:
 
     hide d9
 
-    # play sound "audio/footsteps.mp3"
+    play sound "audio/sound_effects/stairs_d9_run.mp3"
+
+    pause 0.5
 
     "(D9 sprints up the stairs.)"
 
@@ -43,7 +45,9 @@ label scene_3_dialogue_1:
     martin "D9, automaton mode!"
     martin "Priority one task: Go downstairs!"
 
-    # play sound "audio/footsteps.mp3"
+    play sound "audio/sound_effects/stairs_d9_walk.mp3"
+
+    pause 1.0
 
     show d9 automaton at sprite_middle, speaking
     d9 "..."

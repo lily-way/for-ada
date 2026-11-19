@@ -283,9 +283,11 @@ label scene_3_interaction_2_neck:
 
         "Reveal flash ports":
 
-            # TODO: Sound - click
+            play sound "audio/sound_effects/d9_port_reveal"
 
             show expression "images/backgrounds/d9_empty_port.png" as port zorder 10 at background_freeze
+
+            pause 0.5
 
             show headshot_cait focus at headshot_left, speaking
             cait "(Less sensory input should reduce your stress responses.)"
@@ -298,10 +300,12 @@ label scene_3_interaction_2_neck:
 
         "Insert damping drive":
 
-            # TODO: Sound - beep
+            play sound "audio/sound_effects/d9_port_insert"
 
             show bg d9_closeup_auto at background_freeze
             show expression "images/backgrounds/d9_full_port.png" as port zorder 10 at background_freeze
+
+            pause 0.5
 
             show headshot_cait smile at headshot_left, speaking
             cait "(Much better.)"

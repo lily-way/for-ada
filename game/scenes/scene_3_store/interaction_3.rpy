@@ -144,7 +144,9 @@ label scene_3_interaction_3_clothed_torso:
 
     scene bg martin_exposed_torso at background_pan
 
-    # play sound "audio/tearing_fabric.mp3"
+    play sound "audio/sound_effects/tear_fabric.mp3"
+
+    pause 0.5
 
     martins_wife "Martin?!"
     martins_wife "What’s going on down there?!"
@@ -168,10 +170,10 @@ label scene_3_interaction_3_exposed_torso:
 
         "Butcher Martin":
 
-            scene bg martin_exposed_ribcage at background_pan
-            with Fade(0.3, 0.5, 0.3)
+            play sound "audio/sound_effects/chop_meat.mp3"
 
-            # play sound "audio/fleshpeel.mp3"
+            scene bg martin_exposed_ribcage at background_pan
+            with Fade(0.3, 1.0, 0.3)
 
             martins_wife "This better not be another one of your practical jokes!"
 
@@ -190,7 +192,9 @@ label scene_3_interaction_3_exposed_ribcage:
 
     scene bg martin_exposed_organs at background_pan
 
-    # play sound "audio/bonesaw.mp3"
+    play sound "audio/sound_effects/skin_peel.mp3"
+
+    pause 0.5
 
     show headshot_cait bloody_smile at headshot_left, speaking
     cait "(Look at those beautiful new lungs.)"
@@ -214,14 +218,18 @@ label scene_3_interaction_3_exposed_organs:
 
     scene bg martin_no_lungs at background_pan
 
-    # play sound "audio/fleshscoop.mp3"
+    play sound "audio/sound_effects/organ_removal.mp3"
+
+    pause 0.5
 
     show headshot_cait bloody_smile at headshot_left, speaking
     cait "(Thank you, Martin…)"
 
     hide headshot_cait
 
-    # play sound "audio/footsteps.mp3"
+    play sound "audio/sound_effects/stairs_d9_walk.mp3"
+
+    pause 1.0
 
     martins_wife "Martin…?"
 

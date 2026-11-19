@@ -25,7 +25,9 @@ label scene_3_dialogue_4:
 
     hide headshot_cait
 
-    # play sound "audio/thud.mp3"
+    play sound "audio/sound_effects/drag_body.mp3"
+
+    pause 1.0
 
     show headshot_cait bloody_focus at headshot_left, speaking
     cait "(I’m coming home, baby…)"
@@ -38,8 +40,10 @@ label scene_3_dialogue_4:
     scene expression Solid("#000000")
     with fade
 
-    # play music "audio/body_drag_loop.mp3"
-    # play sound "audio/rainstorm.mp3" loop
+    play sound "audio/loops/body_drag_loop.mp3" loop
+    # play sound "audio/loops/rainstorm.mp3" loop
+
+    pause 2.0
 
     show headshot_cait bloody_focus at headshot_left, speaking
     cait "*huff* *huff*"
@@ -58,5 +62,7 @@ label scene_3_dialogue_4:
     cait "(My Ada.)"
 
     hide headshot_cait
+
+    pause 2.0
 
     return
