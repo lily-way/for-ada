@@ -26,7 +26,7 @@ label scene_1_dialogue_1:
     show martin laugh at sprite_middle(y=45), speaking
     with fade
 
-    $ renpy.pause(0.1, hard=True)
+    $ renpy.pause(0.5, hard=True)
 
     martin "There she is! My favorite recluse!"
 

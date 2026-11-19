@@ -167,7 +167,7 @@ transform speaking:
 
 
 transform not_speaking:
-    matrixcolor BrightnessMatrix(-0.2)
+    matrixcolor BrightnessMatrix(-0.05)
 
 
 ################################################################################

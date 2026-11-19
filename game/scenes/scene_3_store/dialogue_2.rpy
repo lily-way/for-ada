@@ -44,7 +44,6 @@ label scene_3_dialogue_2:
     show martin PJs_concerned at sprite_right, speaking
     martin "Hey, hey, hey."
 
-    show martin PJs_concerned at sprite_right, not_speaking
     "(Martin swoops Cait into a tight hug.)"
 
     show martin PJs_concerned at sprite_right, speaking
@@ -85,29 +84,25 @@ label scene_3_dialogue_2:
 
     # play sound "audio/stab.mp3"
 
-    show martin PJs_horror at sprite_right, speaking
+    show martin horror_1 at sprite_right, not_speaking
     martin "Hrrk!"
 
-    show martin PJs_horror at sprite_right, not_speaking
-
     menu:
         "Stab him":
             pass
 
     # play sound "audio/stab.mp3"
 
-    show martin PJs_horror at sprite_right, speaking
+    show martin horror_2 at sprite_right, speaking
     martin "Ghhhhhhhk!"
-
-    show martin PJs_horror at sprite_right, not_speaking
-
+    
     menu:
         "Stab him":
             pass
 
     # play sound "audio/stab.mp3"
 
-    show martin PJs_horror at sprite_right, speaking
+    show martin horror_3 at sprite_right, speaking
     martin "hhhhAAAAAAAAAAAAA!!!!!!!!!!!!!!!"
 
     hide martin

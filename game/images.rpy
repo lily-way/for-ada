@@ -29,7 +29,6 @@ image bg light_cycle_4 = "images/backgrounds/Light_Cycles(4).png"
 ## Cait Headshots
 ################################################################################
 
-image headshot_cait neutral = make_headshot("images/characters/headshots/cait_neutral_headshot.png")
 image headshot_cait focus = make_headshot("images/characters/headshots/cait_focus_headshot.png")
 image headshot_cait smile = make_headshot("images/characters/headshots/cait_smile_headshot.png")
 image headshot_cait sweet = make_headshot("images/characters/headshots/cait_sweet_headshot.png")
@@ -56,7 +55,7 @@ image headshot_cait bloody_worry = make_headshot("images/characters/headshots/ca
 ## Young Cait Sprites
 ################################################################################
 
-image young_cait neutral = "images/characters/young_cait_neutral.png"
+image young_cait focus = "images/characters/young_cait_focus.png"
 image young_cait pissed = "images/characters/young_cait_pissed.png"
 image young_cait smile = "images/characters/young_cait_smile.png"
 image young_cait sob = "images/characters/young_cait_sob.png"
@@ -68,7 +67,7 @@ image young_cait worry = "images/characters/young_cait_worry.png"
 ## Young Cait Headshots
 ################################################################################
 
-image headshot_cait young_neutral = make_headshot("images/characters/headshots/young_cait_neutral_headshot.png")
+image headshot_cait young_focus = make_headshot("images/characters/headshots/young_cait_focus_headshot.png")
 image headshot_cait young_pissed = make_headshot("images/characters/headshots/young_cait_pissed_headshot.png")
 image headshot_cait young_smile = make_headshot("images/characters/headshots/young_cait_smile_headshot.png")
 image headshot_cait young_sob = make_headshot("images/characters/headshots/young_cait_sob_headshot.png")
@@ -88,13 +87,16 @@ image martin PJs_concerned = "images/characters/Martin_PJs_Concern.png"
 image martin PJs_neutral = "images/characters/Martin_PJs_Neutral.png"
 image martin PJs_horror = "images/characters/Martin_PJs_Horror.png"
 image martin PJs_happy = "images/characters/Martin_PJs_Happy.png"
+image martin horror_1 = "images/characters/martin_horror_1.png"
+image martin horror_2 = "images/characters/martin_horror_2.png"
+image martin horror_3 = "images/characters/martin_horror_3.png"
 
 
 ################################################################################
 ## Martin Headshots
 ################################################################################
 
-image headshot_martin neutral = make_headshot("images/characters/headshots/Martin_Neutral_Headshot.png", center_x=0.55)
+image headshot_martin neutral = make_headshot("images/characters/headshots/Martin_Neutral_Headshot.png")
 image headshot_martin laugh = make_headshot("images/characters/headshots/Martin_Happy_Headshot.png")
 image headshot_martin rage = make_headshot("images/characters/headshots/Martin_Rage_Headshot.png")
 
@@ -126,7 +128,7 @@ image ada neutral = "images/characters/ada_neutral.png"
 image ada sleepy = "images/characters/ada_sleepy.png"
 image ada sick = "images/characters/ada_sick.png"
 image ada mischief = "images/characters/ada_mischief.png"
-image ada smile = "images/characters/ada_smile.png"
+image ada happy = "images/characters/ada_smile.png"
 image ada shock = "images/characters/ada_shock.png"
 image ada thoughtful = "images/characters/ada_thoughtful.png"
 image ada deathly = "images/characters/ada_deathly.png"
@@ -142,7 +144,7 @@ image headshot_ada sick = make_headshot("images/characters/headshots/ada_sick_he
 image headshot_ada mischief = make_headshot("images/characters/headshots/ada_mischief_headshot.png")
 image headshot_ada shock = make_headshot("images/characters/headshots/ada_shock_headshot.png")
 image headshot_ada thoughtful = make_headshot("images/characters/headshots/ada_thoughtful_headshot.png")
-
+image headshot_ada happy = make_headshot("images/characters/headshots/ada_smile_headshot.png")
 
 ################################################################################
 ## Young Ada Sprites
@@ -195,8 +197,8 @@ image ingredient_veggies_pot = "images/cooking_ingredients/Veggies_Pot.png"
 image bg martin_clothed_torso = "images/backgrounds/martin_clothed_torso.png"
 image bg martin_exposed_torso = "images/backgrounds/martin_exposed_torso.png"
 image bg martin_exposed_ribcage = "images/backgrounds/MartinFloor3.png"
-image bg martin_exposed_organs = "images/backgrounds/MartinFloor4.png"
-image bg martin_no_lungs = "images/backgrounds/MartinFloor5.png"
+image bg martin_exposed_organs = "images/backgrounds/martin_exposed_organs.png"
+image bg martin_no_lungs = "images/backgrounds/martin_no_lungs.png"
 
 
 ################################################################################

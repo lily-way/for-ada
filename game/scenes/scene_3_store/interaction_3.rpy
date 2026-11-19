@@ -82,7 +82,7 @@ label scene_3_interaction_3:
     scene expression Solid("#000000")
     with Dissolve(0.5)
 
-    scene bg martin_clothed_torso at background_freeze
+    scene bg martin_clothed_torso at background_fixed
     with Dissolve(0.5)
 
     show headshot_cait focus at headshot_left, speaking
@@ -90,7 +90,7 @@ label scene_3_interaction_3:
 
     hide headshot_cait
 
-    show bg martin_clothed_torso at background_pan
+    show bg martin_clothed_torso at background_fixed
 
     while not scene_3_interaction_3_clothed_torso_done:
 
@@ -130,7 +130,7 @@ label scene_3_interaction_3:
 
 label scene_3_interaction_3_clothed_torso:
 
-    scene bg martin_exposed_torso at background_freeze
+    scene bg martin_exposed_torso at background_fixed
 
     # play sound "audio/tearing_fabric.mp3"
 
@@ -139,7 +139,7 @@ label scene_3_interaction_3_clothed_torso:
 
     $ scene_3_interaction_3_clothed_torso_done = True
 
-    show bg martin_exposed_torso at background_pan
+    show bg martin_exposed_torso at background_fixed
 
     return
 
@@ -150,13 +150,13 @@ label scene_3_interaction_3_clothed_torso:
 
 label scene_3_interaction_3_exposed_torso:
 
-    show bg martin_exposed_torso at background_freeze
+    show bg martin_exposed_torso at background_fixed
 
     menu:
 
         "Butcher Martin":
 
-            scene bg martin_exposed_ribcage at background_freeze
+            scene bg martin_exposed_ribcage at background_fixed
             with Fade(0.3, 0.5, 0.3)
 
             # play sound "audio/fleshpeel.mp3"
@@ -165,7 +165,7 @@ label scene_3_interaction_3_exposed_torso:
 
             $ scene_3_interaction_3_exposed_torso_done = True
 
-            show bg martin_exposed_ribcage at background_pan
+            show bg martin_exposed_ribcage at background_fixed
 
     return
 
@@ -176,7 +176,7 @@ label scene_3_interaction_3_exposed_torso:
 
 label scene_3_interaction_3_exposed_ribcage:
 
-    scene bg martin_exposed_organs at background_freeze
+    scene bg martin_exposed_organs at background_fixed
 
     # play sound "audio/bonesaw.mp3"
 
@@ -189,7 +189,7 @@ label scene_3_interaction_3_exposed_ribcage:
 
     $ scene_3_interaction_3_exposed_ribcage_done = True
 
-    show bg martin_exposed_organs at background_pan
+    show bg martin_exposed_organs at background_fixed
 
     return
 
@@ -200,7 +200,7 @@ label scene_3_interaction_3_exposed_ribcage:
 
 label scene_3_interaction_3_exposed_organs:
 
-    scene bg martin_no_lungs at background_freeze
+    scene bg martin_no_lungs at background_fixed
 
     # play sound "audio/fleshscoop.mp3"
 
