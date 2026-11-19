@@ -107,7 +107,7 @@ define scene_2_interaction_2_objects = [
     Interaction(
         name="kitchen_counter",
         interaction_type="interact",
-        area=(1471, 537, 574, 116),
+        area=(1465, 380, 516, 253),
         action="scene_2_interaction_2_counter",
         completed="scene_2_interaction_2_counter_done",
         mandatory=True
