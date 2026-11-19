@@ -9,10 +9,10 @@ label start:
     # call scene_2_dialogue_1
     # call scene_2_interaction_1
     # call scene_2_dialogue_2
-    call scene_2_interaction_2
+    # call scene_2_interaction_2
     call scene_2_interaction_3
     call scene_2_dialogue_3
-    # call scene_2_interaction_4
+    call scene_2_interaction_4
     # # call scene_3_interaction_1
     # # call scene_3_dialogue_1
     # # call scene_3_interaction_2
