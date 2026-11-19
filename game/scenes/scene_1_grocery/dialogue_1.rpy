@@ -12,7 +12,7 @@ label scene_1_dialogue_1:
 
     pause 3.0
 
-    scene bg store at background_fixed
+    scene expression Solid("#000000")
     with fade
 
     play sound "audio/sound_effects/shop_door_bell.mp3"
@@ -22,9 +22,10 @@ label scene_1_dialogue_1:
     while renpy.music.is_playing(channel="sound"):
         $ renpy.pause(0.1, hard=True)
 
+    scene bg store at background_fixed
     show martin laugh at sprite_middle(y=45), speaking
     with fade
-    
+
     martin "There she is! My favorite recluse!"
 
     show martin neutral at sprite_middle(y=45), speaking
