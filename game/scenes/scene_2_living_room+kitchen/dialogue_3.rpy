@@ -24,8 +24,10 @@ label scene_2_dialogue_3:
 
         "Grab tools":
 
-            # play sound "audio/metal_rustling.mp3"
-            # play sound "audio/zipper.mp3"
+            play sound "audio/sound_effects/gather_tools.mp3"
+            play sound "audio/sound_effects/zipper.mp3"
+
+            pause 6.0
 
             show headshot_cait focus at headshot_left, speaking
             cait "(I have what I need.)"
