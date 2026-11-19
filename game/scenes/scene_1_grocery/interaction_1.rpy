@@ -184,7 +184,7 @@ label scene_1_interaction_1_wine:
     show headshot_cait smile at headshot_left, speaking
     cait "(But Ada loves this sort of thing.)"
 
-    show headshot_cait focus at headshot_left, speaking
+    show headshot_cait smile at headshot_left, speaking
     cait "(Historical homeworld culture, literature, food... It just appeals to her.)"
 
     show headshot_cait smile at headshot_left, speaking

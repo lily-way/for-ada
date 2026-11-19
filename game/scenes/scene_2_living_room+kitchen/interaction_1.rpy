@@ -991,7 +991,7 @@ label scene_2_interaction_1_radio_1070:
 
         hide headshot_ada
         show headshot_cait sweet at headshot_left, speaking
-        cait ""...""
+        cait "..."
 
 
         $ scene_2_interaction_1_radio_1070_done = True
