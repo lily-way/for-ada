@@ -350,22 +350,22 @@ label scene_2_interaction_1_journal:
 
     "(Time passes…)"
 
-    # play sound "audio/page_flip.mp3"
+    play sound "audio/sound_effects/page_flip.mp3"
 
     show headshot_cait PO at headshot_left, speaking
     cait "(Idiotic.)"
 
-    # play sound "audio/page_flip.mp3"
+    play sound "audio/sound_effects/page_flip.mp3"
     cait "(Poorly sourced.)"
 
-    # play sound "audio/page_flip.mp3"
+    play sound "audio/sound_effects/page_flip.mp3"
     cait "(We’ve known that for decades!)"
 
-    # play sound "audio/page_flip.mp3"
+    play sound "audio/sound_effects/page_flip.mp3"
     cait "(I remember you…)"
     cait "(I should have failed you at your dissertation.)"
 
-    # play sound "audio/book_thud.mp3"
+    play sound "audio/sound_effects/page_close.mp3"
 
     show headshot_cait focus at headshot_left, speaking
     cait "(Well, that’s enough of that.)"
@@ -477,7 +477,7 @@ label scene_2_interaction_1_window:
 
     hide headshot_cait
 
-    # play sound "audio/crunch.mp3"
+    play sound "audio/sound_effects/bone_crunch.mp3"
 
     "(*CRUNCH*)"
 
@@ -606,7 +606,8 @@ label scene_2_interaction_1_knife_block:
 
         "Sharpen knives":
 
-            # play sound "audio/knife_sharpening.mp3"
+            play sound "audio/sound_effects/knife_sharpen.mp3"
+            pause 2.2
 
             "Cait sharpens each knife methodically before returning it to the block."
 
@@ -729,7 +730,7 @@ label scene_2_interaction_1_radio:
 
         hide headshot_cait
 
-        # play sound "audio/radio_static.mp3"
+        play sound "audio/sound_effects/radio_static.mp3"
 
         "Radio" "Bzzt!"
 
@@ -766,7 +767,7 @@ label scene_2_interaction_1_radio:
 
 label scene_2_interaction_1_radio_965:
 
-    # play sound "audio/radio_static.mp3"
+    play sound "audio/sound_effects/radio_static.mp3"
 
     "Radio" "Bzzt!"
 
@@ -817,7 +818,7 @@ label scene_2_interaction_1_radio_965:
 
 label scene_2_interaction_1_radio_1051:
 
-    # play sound "audio/radio_static.mp3"
+    play sound "audio/sound_effects/radio_static.mp3"
 
     "Radio" "Bzzt!"
 
@@ -887,7 +888,7 @@ label scene_2_interaction_1_radio_1051:
 
 label scene_2_interaction_1_radio_1070:
 
-    # play sound "audio/radio_static.mp3"
+    play sound "audio/sound_effects/radio_static.mp3"
 
     "Radio" "Bzzt!"
 
