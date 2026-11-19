@@ -75,7 +75,7 @@ label scene_4_interaction_7_torso:
     scene bg ada_healthy_lungs at background_fixed
     with fade
 
-    show headshot_cait sweet at headshot_left, speaking
+    show headshot_cait bloody_sweet at headshot_left, speaking
     cait "Breathe easy, baby."
 
     cait "Soon we’ll be together again."

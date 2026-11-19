@@ -90,7 +90,7 @@ label scene_4_interaction_11_torso:
     scene bg ada_tubes at background_fixed
     with fade
 
-    show headshot_cait sweet at headshot_left, speaking
+    show headshot_cait bloody_sweet at headshot_left, speaking
     cait "Come back to me, Ada."
 
     cait "I’ll remake your body as many times as it takes."
@@ -98,7 +98,7 @@ label scene_4_interaction_11_torso:
     scene bg ada_restored_open at background_fixed
     with fade
 
-    show headshot_cait sweet at headshot_left, speaking
+    show headshot_cait bloody_sweet at headshot_left, speaking
     cait "All I want is to see you being your whole self."
 
     cait "You love it almost as much as I do."
@@ -113,13 +113,13 @@ label scene_4_interaction_11_torso:
     scene bg ada_restored_sealed at background_fixed
     with fade
 
-    show headshot_cait sweet at headshot_left, speaking
+    show headshot_cait bloody_sweet at headshot_left, speaking
     cait "You’re good as new, baby."
 
     scene bg ada_restored_sealed_hand at background_fixed
     with fade
 
-    show headshot_cait sweet at headshot_left, speaking
+    show headshot_cait bloody_sweet at headshot_left, speaking
     cait "I can’t wait to see you again."
 
     hide headshot_cait
