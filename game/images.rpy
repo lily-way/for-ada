@@ -42,7 +42,7 @@ image headshot_cait sob = make_headshot("images/characters/headshots/cait_sob_he
 ## Cait Bloody Headshots
 ################################################################################
 
-image headshot_cait bloody_neutral = make_headshot("images/characters/headshots/cait_bloody_neutral_headshot.png")
+image headshot_cait bloody_focus = make_headshot("images/characters/headshots/cait_bloody_neutral_headshot.png")
 image headshot_cait bloody_panic = make_headshot("images/characters/headshots/cait_bloody_panic_headshot.png")
 image headshot_cait bloody_pissed = make_headshot("images/characters/headshots/cait_bloody_pissed_headshot.png")
 image headshot_cait bloody_smile = make_headshot("images/characters/headshots/cait_bloody_smile_headshot.png")

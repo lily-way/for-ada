@@ -28,12 +28,12 @@ label scene_3_dialogue_2:
 
     # play sound "audio/heavy_footsteps.mp3"
 
-    show martin PJs_concerned at sprite_right, not_speaking
+    show martin PJs_concerned at sprite_middle, not_speaking
 
-    show martin PJs_concerned at sprite_right, speaking
+    show martin PJs_concerned at sprite_middle, speaking
     martin "What happened? Is she okay?"
 
-    show martin PJs_concerned at sprite_right, not_speaking
+    show martin PJs_concerned at sprite_middle, not_speaking
     show headshot_cait panic at headshot_left, speaking
     cait "She just started coughing and coughing…"
     cait "And then…"
@@ -41,26 +41,26 @@ label scene_3_dialogue_2:
 
     hide headshot_cait
 
-    show martin PJs_concerned at sprite_right, speaking
+    show martin PJs_concerned at sprite_middle, speaking
     martin "Hey, hey, hey."
 
     "(Martin swoops Cait into a tight hug.)"
 
-    show martin PJs_concerned at sprite_right, speaking
+    show martin PJs_concerned at sprite_middle, speaking
     martin "We’re going to figure this out."
     martin "We won’t let her die."
     martin "She deserves better, and you are going to give that to her."
 
-    show martin PJs_concerned at sprite_right, not_speaking
+    show martin PJs_concerned at sprite_middle, not_speaking
     show headshot_cait smile at headshot_left, speaking
     cait "Yeah?"
 
     hide headshot_cait
 
-    show martin PJs_neutral at sprite_right, speaking
+    show martin PJs_neutral at sprite_middle, speaking
     martin "Absolutely."
 
-    show martin PJs_neutral at sprite_right, not_speaking
+    show martin PJs_neutral at sprite_middle, not_speaking
     show headshot_cait smile at headshot_left, speaking
     cait "(He’s so kind…)"
     cait "(Together, we can save her.)"
@@ -68,11 +68,11 @@ label scene_3_dialogue_2:
 
     hide headshot_cait
 
-    show martin PJs_neutral at sprite_right, speaking
+    show martin PJs_neutral at sprite_middle, speaking
     martin "Now, use that big, educated brain of yours."
     martin "What does she need?"
 
-    show martin PJs_neutral at sprite_right, speaking
+    show martin PJs_neutral at sprite_middle, speaking
     show headshot_cait focus at headshot_left, speaking
     cait "Lungs."
 
@@ -84,7 +84,7 @@ label scene_3_dialogue_2:
 
     # play sound "audio/stab.mp3"
 
-    show martin horror_1 at sprite_right, speaking
+    show martin horror_1 at sprite_middle, speaking
     martin "Hrrk!"
 
     menu:
@@ -93,7 +93,7 @@ label scene_3_dialogue_2:
 
     # play sound "audio/stab.mp3"
 
-    show martin horror_2 at sprite_right, speaking
+    show martin horror_2 at sprite_middle, speaking
     martin "Ghhhhhhhk!"
     
     menu:
@@ -102,7 +102,7 @@ label scene_3_dialogue_2:
 
     # play sound "audio/stab.mp3"
 
-    show martin horror_3 at sprite_right, speaking
+    show martin horror_3 at sprite_middle, speaking
     martin "hhhhAAAAAAAAAAAAA!!!!!!!!!!!!!!!"
 
     hide martin

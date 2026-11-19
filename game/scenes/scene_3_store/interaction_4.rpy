@@ -64,7 +64,7 @@ define scene_3_interaction_4_exposed_organs_objects = [
 
 label scene_3_interaction_4:
 
-    scene bg wife_clothed_torso at background_fixed
+    scene bg wife_clothed_torso at background_pan
     with fade
 
     show headshot_cait focus at headshot_left, speaking
@@ -123,7 +123,7 @@ label scene_3_interaction_4_clothed_torso:
 
             # TODO: Sound - tearing_fabric
 
-            scene bg wife_exposed_torso at background_fixed
+            scene bg wife_exposed_torso at background_pan
 
             $ scene_3_interaction_4_clothed_torso_done = True
 
@@ -146,7 +146,7 @@ label scene_3_interaction_4_exposed_torso:
             # TODO: Sound - fleshpeel
             # TODO: Sound - bonesaw
 
-            scene bg wife_exposed_organs at background_fixed
+            scene bg wife_exposed_organs at background_pan
             with fade
 
             show headshot_cait focus at headshot_left, speaking
@@ -176,7 +176,7 @@ label scene_3_interaction_4_exposed_organs:
 
             # TODO: Sound - fleshscoop
 
-            scene bg wife_no_heart at background_fixed
+            scene bg wife_no_heart at background_pan
 
             menu:
 

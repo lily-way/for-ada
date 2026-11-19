@@ -127,7 +127,7 @@ label scene_4_interaction_10:
         call expression _return
 
     hide headshot_cait
-    hide headshot_ada
+    hide young_ada
 
     show expression scene_4_interaction_4_background() as bg at background_fixed
 
@@ -245,17 +245,16 @@ label scene_4_interaction_10_bed:
 
     show expression scene_4_interaction_4_background() as bg at background_freeze
 
-    show headshot_ada young_thoughtful at headshot_right, speaking
+    show young_ada thoughtful at sprite_right, speaking
     young_ada "I wish I wasn’t an android."
 
-    hide headshot_ada
-
+    show young_ada thoughtful at sprite_right, not_speaking
     show headshot_cait young_focus at headshot_left, speaking
     young_cait "What makes you say that?"
 
     hide headshot_cait
 
-    show headshot_ada young_thoughtful at headshot_right, speaking
+    show young_ada thoughtful at sprite_right, speaking
     young_ada "Well, I’ll use you for an example."
 
     young_ada "You’ve been studying me for weeks now…"
@@ -264,8 +263,7 @@ label scene_4_interaction_10_bed:
 
     young_ada "...Maybe I wish you were just interested in me."
 
-    hide headshot_ada
-
+    show young_ada thoughtful at sprite_right, not_speaking
     show headshot_cait young_focus at headshot_left, speaking
     young_cait "..."
 
@@ -275,31 +273,29 @@ label scene_4_interaction_10_bed:
 
     hide headshot_cait
 
-    show headshot_ada young_thoughtful at headshot_right, speaking
+    show young_ada thoughtful at sprite_right, speaking
     young_ada "Yes, but you’ve known me for much longer."
 
-    show headshot_ada young_neutral at headshot_right, speaking
+    show young_ada neutral at sprite_right, speaking
     young_ada "I can tell by the way you treat me."
 
     young_ada "And if I’ve liked you this much in these past few hours…"
 
     young_ada "Then presumably I’ve also liked you in all of my eight-hour increments."
 
-    show headshot_ada young_thoughtful at headshot_right, speaking
+    show young_ada thoughtful at sprite_right, speaking
     young_ada "We basically have a relationship of many hours."
 
-    hide headshot_ada
-
+    show young_ada thoughtful at sprite_right, not_speaking
     show headshot_cait young_smile at headshot_left, speaking
     young_cait "I don’t think that’s how it works."
 
     hide headshot_cait
 
-    show headshot_ada young_neutral at headshot_right, speaking
+    show young_ada neutral at sprite_right, speaking
     young_ada "I just wish you were interested in me for non-android reasons."
 
-    hide headshot_ada
-
+    show young_ada neutral at sprite_right, not_speaking
     show headshot_cait young_focus at headshot_left, speaking
     young_cait "..."
 
@@ -307,14 +303,14 @@ label scene_4_interaction_10_bed:
 
     hide headshot_cait
 
-    show headshot_ada young_neutral at headshot_right, speaking
+    show young_ada neutral at sprite_right, speaking
     young_ada "Heh."
 
     young_ada "I wish I wasn’t an android so that I could believe you."
 
     young_ada "Or even that I didn’t know."
 
-    hide headshot_ada
+    hide young_ada
 
     $ scene_4_interaction_10_bed_done = True
 

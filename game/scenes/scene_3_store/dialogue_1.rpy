@@ -7,7 +7,7 @@ label scene_3_dialogue_1:
     scene bg store at background_fixed
     with Dissolve(0.5)
 
-    show d9 alarmed at sprite_right, speaking
+    show d9 alarmed at sprite_middle, speaking
     d9 "...!"
 
     hide d9
@@ -45,38 +45,38 @@ label scene_3_dialogue_1:
 
     # play sound "audio/footsteps.mp3"
 
-    show d9 automaton at sprite_right, speaking
+    show d9 automaton at sprite_middle, speaking
     d9 "..."
 
-    show d9 automaton at sprite_right, not_speaking
+    show d9 automaton at sprite_middle, not_speaking
     martin "Sit."
 
-    show d9 automaton at sprite_right, speaking
+    show d9 automaton at sprite_middle, speaking
     d9 "..."
 
-    show d9 automaton at sprite_right, not_speaking
+    show d9 automaton at sprite_middle, not_speaking
 
     "(D9 sits at the base of the stairs.)"
 
     martin "Stay."
 
-    show d9 automaton at sprite_right, speaking
+    show d9 automaton at sprite_middle, speaking
     d9 "..."
 
-    show d9 automaton at sprite_right, not_speaking
+    show d9 automaton at sprite_middle, not_speaking
     martin "Priority one task: Don’t move!"
     martin "Return to android mode."
 
-    show d9 automaton at sprite_right, speaking
+    show d9 automaton at sprite_middle, speaking
     d9 "..."
 
-    show d9 neutral at sprite_right, speaking
+    show d9 neutral at sprite_middle, speaking
     d9 "..."
 
-    show d9 fear at sprite_right, speaking
+    show d9 fear at sprite_middle, speaking
     d9 "...!"
 
-    show d9 fear at sprite_right, not_speaking
+    show d9 fear at sprite_middle, not_speaking
 
     show headshot_cait focus at headshot_left, speaking
     cait "(Most people think androids can’t feel emotions.)"

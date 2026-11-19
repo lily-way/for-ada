@@ -127,7 +127,7 @@ label scene_4_interaction_8:
         call expression _return
 
     hide headshot_cait
-    hide headshot_ada
+    hide young_ada
 
     show expression scene_4_interaction_4_background() as bg at background_fixed
 
@@ -261,31 +261,30 @@ label scene_4_interaction_8_bed:
 
     show expression scene_4_interaction_4_background() as bg at background_freeze
 
-    show headshot_ada young_smile at headshot_right, speaking
+    show young_ada smile at sprite_right, speaking
     young_ada "Stop me if you’ve heard this one before."
 
-    hide headshot_ada
-
+    show young_ada smile at sprite_right, not_speaking
     show headshot_cait young_smile at headshot_left, speaking
     young_cait "You think I haven’t heard them all before yet?"
 
     hide headshot_cait
 
-    show headshot_ada young_thoughtful at headshot_right, speaking
+    show young_ada thoughtful at sprite_right, speaking
     young_ada "Well, maybe…"
 
-    show headshot_ada young_smile at headshot_right, speaking
+    show young_ada smile at sprite_right, speaking
     young_ada "but I still want to try to entertain you!"
 
-    show headshot_ada young_mischief at headshot_right, speaking
+    show young_ada mischief at sprite_right, speaking
     young_ada "I promise I’m more interesting than whatever’s wrong with my brain."
 
-    hide headshot_ada
-
+    show young_ada mischief at sprite_right, not_speaking
     show headshot_cait young_sweet at headshot_left, speaking
     young_cait "I believe you."
 
     hide headshot_cait
+    hide young_ada
 
     $ scene_4_interaction_8_bed_done = True
 

@@ -18,11 +18,11 @@ label scene_3_dialogue_3:
     scene bg interior_grocery_store_night at background_fixed
     with Dissolve(0.5)
 
-    show martins_wife horror at sprite_right, speaking
+    show martins_wife horror at sprite_middle, speaking
     martins_wife "Martin!!!!!!!"
     martins_wife "D9, protection mode!!!"
 
-    show martins_wife horror at sprite_right, not_speaking
+    show martins_wife horror at sprite_middle, not_speaking
     show headshot_cait focus at headshot_left, speaking
     cait "(Better pack these up.)"
 
@@ -34,10 +34,10 @@ label scene_3_dialogue_3:
 
     # play sound "audio/gas_release.mp3"
 
-    show martins_wife horror at sprite_right, speaking
+    show martins_wife horror at sprite_middle, speaking
     martins_wife "D9!!! Priority one, protection mode!!!"
 
-    show martins_wife horror at sprite_right, not_speaking
+    show martins_wife horror at sprite_middle, not_speaking
     show headshot_cait focus at headshot_left, speaking
     cait "(And I need my tools.)"
 
@@ -49,10 +49,10 @@ label scene_3_dialogue_3:
 
     # play sound "audio/stab.mp3"
 
-    show martins_wife horror at sprite_right, speaking
+    show martins_wife horror at sprite_middle, speaking
     martins_wife "D9, please–"
 
-    show martins_wife horror at sprite_right, not_speaking
+    show martins_wife horror at sprite_middle, not_speaking
     show headshot_cait focus at headshot_left, speaking
     cait "Don’t bother."
     cait "She can’t hear you."
@@ -65,10 +65,10 @@ label scene_3_dialogue_3:
 
             # play sound "audio/crack_thunk.mp3"
 
-            show martins_wife headbleed at sprite_right, speaking
+            show martins_wife headbleed at sprite_middle, speaking
             martins_wife "Huhhhhh…"
 
-            show martins_wife headbleed at sprite_right, not_speaking
+            show martins_wife headbleed at sprite_middle, not_speaking
 
             menu:
                 "Hit her again":
@@ -76,17 +76,17 @@ label scene_3_dialogue_3:
 
             # play sound "audio/crunch.mp3"
 
-            show martins_wife headbleed at sprite_right, speaking
+            show martins_wife headbleed at sprite_middle, speaking
             martins_wife "Hnnnnhhh…"
 
         "Stab her in the eye":
 
             # play sound "audio/eyesquish.mp3"
 
-            show martins_wife eyebleed at sprite_right, speaking
+            show martins_wife eyebleed at sprite_middle, speaking
             martins_wife "EeeeaaAAAAAA!!!!"
 
-            show martins_wife eyebleed at sprite_right, not_speaking
+            show martins_wife eyebleed at sprite_middle, not_speaking
 
             menu:
                 "Push it deeper":
@@ -94,7 +94,7 @@ label scene_3_dialogue_3:
 
             # play sound "audio/brainsquish.mp3"
 
-            show martins_wife eyebleed at sprite_right, speaking
+            show martins_wife eyebleed at sprite_middle, speaking
             martins_wife "Eeeeeeeuhhhhh…"
 
     hide martins_wife

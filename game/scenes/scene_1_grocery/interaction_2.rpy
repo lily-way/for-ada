@@ -80,16 +80,16 @@ label scene_1_interaction_2_stairs:
 
     show bg store at background_freeze
 
-    show d9 neutral at sprite_right, not_speaking
+    show d9 neutral at sprite_middle, not_speaking
 
     show headshot_cait focus at headshot_left, speaking
     cait "..."
 
     hide headshot_cait
-    show d9 neutral at sprite_right, speaking
+    show d9 neutral at sprite_middle, speaking
     d9 "..."
 
-    show d9 neutral at sprite_right, not_speaking
+    show d9 neutral at sprite_middle, not_speaking
     show headshot_cait focus at headshot_left, speaking
     cait "..."
 
@@ -97,10 +97,10 @@ label scene_1_interaction_2_stairs:
     cait "Thank you again for the stock, D9."
 
     hide headshot_cait
-    show d9 neutral at sprite_right, speaking
+    show d9 neutral at sprite_middle, speaking
     d9 "..."
 
-    show d9 neutral at sprite_right, not_speaking
+    show d9 neutral at sprite_middle, not_speaking
     show headshot_cait focus at headshot_left, speaking
     cait "..."
     cait "(D8 was so full of life.)"
@@ -109,7 +109,7 @@ label scene_1_interaction_2_stairs:
     cait "..."
 
     hide headshot_cait
-    show d9 neutral at sprite_right, speaking
+    show d9 neutral at sprite_middle, speaking
     d9 "..."
 
     hide d9
@@ -162,7 +162,7 @@ label scene_1_interaction_2_register:
     cait "Good day to you as well, D9."
 
     hide headshot_cait
-    show d9 neutral at sprite_left, speaking
+    show d9 neutral at sprite_middle, speaking
     d9 "..."
 
     hide d9
