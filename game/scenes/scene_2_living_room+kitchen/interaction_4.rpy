@@ -263,20 +263,11 @@ label scene_2_interaction_4_door:
 
     show headshot_cait focus at headshot_left, speaking
     cait "(The storm…)"
+    cait "(It doesn't matter.)"
+    cait "(Don’t worry, Ada…)"
+    cait "(I’ll save you.)"
 
     hide headshot_cait
-
-    menu:
-
-        "Put on rain clothes":
-
-            # play sound "audio/zipper.mp3"
-
-            show headshot_cait focus at headshot_left, speaking
-            cait "(Don’t worry, Ada…)"
-            cait "(I’ll save you.)"
-
-            hide headshot_cait
 
     scene expression Solid("#000000")
     with Dissolve(0.5)

@@ -56,6 +56,8 @@ label scene_1_dialogue_1:
     cait "Fifteen years. Thanks, Martin. I'll let her know."
 
     hide headshot_cait
+    
     hide martin
+    with fade
 
     return

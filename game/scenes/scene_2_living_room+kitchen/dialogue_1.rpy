@@ -4,14 +4,20 @@
 
 label scene_2_dialogue_1:
 
+    pause 1.0
+
+    scene expression Solid("#000000")
+
+    play sound "audio/sound_effects/door_close.mp3"
+    $ duration = renpy.music.get_duration("sound")
+    $ renpy.pause(duration, hard=True)
+
     scene expression Composite(
         (2300, 1200),
         (0, 0), "bg light_cycle_0",
         (0, 0), "bg living_room"
     ) as bg at background_fixed
     with fade
-
-    # play sound "audio/door_close.mp3"
 
     show ada neutral at sprite_right, not_speaking
 
@@ -97,6 +103,7 @@ label scene_2_dialogue_1:
     show ada shock at sprite_right, not_speaking
     show headshot_cait sweet at headshot_left, speaking
     cait "You’ll find out at dinnertime."
+    cait "Some secrets are worth keeping."
 
     show headshot_cait smile at headshot_left, speaking
     cait "Should I start cooking?"

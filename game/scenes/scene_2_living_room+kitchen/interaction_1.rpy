@@ -957,7 +957,7 @@ label scene_2_interaction_1_radio_1070:
         hide headshot_cait
         show headshot_ada neutral at headshot_right, speaking
         ada "How about this?"
-        ada "You tell me your least thing about visiting homeworld, and I’ll propose an alternative."
+        ada "You tell me your least favorite thing about visiting homeworld, and I’ll propose an alternative."
 
         hide headshot_ada
         show headshot_cait focus at headshot_left, speaking
@@ -976,6 +976,23 @@ label scene_2_interaction_1_radio_1070:
 
             "The transportation":
                 call scene_2_interaction_1_radio_transportation
+        
+        hide headshot_ada
+        show headshot_cait sweet at headshot_left, speaking
+        cait "Alright, I’m convinced."
+
+        hide headshot_cait
+        show headshot_ada_happy at headshot_right, speaking
+        ada "Heck yes!"
+        ada "Once I’m feeling better, I’ll start looking into details."
+
+        show headshot_ada_mischief at headshot_right, speaking
+        ada "Just you wait…"
+
+        hide headshot_ada
+        show headshot_cait sweet at headshot_left, speaking
+        cait "..."
+
 
         $ scene_2_interaction_1_radio_1070_done = True
 
