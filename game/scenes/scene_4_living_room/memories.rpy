@@ -152,7 +152,7 @@ label scene_4_memory_4:
 
     cait "...Or the history of the furniture we were sitting on…"
 
-    cait "...Even the freckles on my cheeks that you found so beautiful."
+    cait "...Even the color of my eyes that you found so beautiful."
 
     cait "I remember seeing how you’d always devour the novels I left on your nightstand."
 

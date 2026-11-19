@@ -103,21 +103,6 @@ label scene_4_interaction_6:
     $ progress_interactions = None
     $ progress_open = False
 
-    scene expression Solid("#000000")
-    with fade
-
-    show headshot_cait worry at headshot_left, speaking
-    cait "What a horrible night…"
-
-    cait "I’m glad you aren’t awake to see all this."
-
-    cait "You deserve better."
-
-    show headshot_cait sweet at headshot_left, speaking
-    cait "You always have."
-
-    hide headshot_cait
-
     scene expression scene_4_interaction_4_background() as bg at background_pan
     with fade
 

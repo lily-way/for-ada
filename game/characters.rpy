@@ -62,7 +62,7 @@ define cait = Character(
     show_accent_color=cait_color,
     callback=dialogue_blip,
     cb_blip="audio/characters/cait.wav",
-    cb_blip_delay=0.05
+    cb_blip_delay=0.04
 )
 
 define ada = Character(
@@ -80,7 +80,7 @@ define martin = Character(
     show_accent_color=martin_color,
     callback=dialogue_blip,
     cb_blip="audio/characters/martin.wav",
-    cb_blip_delay=0.07
+    cb_blip_delay=0.05
 )
 
 define d9 = Character(

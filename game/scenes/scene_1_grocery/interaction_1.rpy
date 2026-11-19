@@ -87,19 +87,23 @@ label scene_1_interaction_1:
     "(Press Q to view how many mandatory and optional interactions you've completed.)"
     "(Warning! Once you've completed all mandatory interactions, you won't be able to go back.)"
 
-    show bg store at background_pan
-
     while not (
         scene_1_interaction_1_wine_done
         and scene_1_interaction_1_bread_done
         and scene_1_interaction_1_soup_done
     ):
 
+        show bg store at background_pan
+
         call screen interaction_screen(scene_1_interaction_1_objects)
+
+        show bg store at background_freeze
+
         call expression _return
-    show bg store at background_freeze
+
     $ progress_interactions = None
     $ progress_open = False
+
     return
 
 
@@ -111,8 +115,6 @@ label scene_1_interaction_1_cigarettes:
 
     if scene_1_interaction_1_cigarettes_done:
         return
-
-    show bg store at background_freeze
 
     show headshot_cait smile at headshot_left, speaking
     cait "Didn't you say you quit smoking?"
@@ -136,8 +138,6 @@ label scene_1_interaction_1_cigarettes:
 
     $ scene_1_interaction_1_cigarettes_done = True
 
-    show bg store at background_pan
-
     return
 
 
@@ -149,8 +149,6 @@ label scene_1_interaction_1_deli:
 
     if scene_1_interaction_1_deli_done:
         return
-
-    show bg store at background_freeze
 
     show headshot_cait focus at headshot_left, speaking
     cait "(Ada and I raise our own g-13 rabbits, so there's no need to buy meat here.)"
@@ -168,8 +166,6 @@ label scene_1_interaction_1_deli:
 
     $ scene_1_interaction_1_deli_done = True
 
-    show bg store at background_pan
-
     return
 
 
@@ -181,8 +177,6 @@ label scene_1_interaction_1_wine:
 
     if scene_1_interaction_1_wine_done:
         return
-
-    show bg store at background_freeze
 
     show headshot_cait focus at headshot_left, speaking
     cait "(If it were up to me, I'd just get the cheapest bottle and move on.)"
@@ -208,8 +202,6 @@ label scene_1_interaction_1_wine:
 
     $ scene_1_interaction_1_wine_done = True
 
-    show bg store at background_pan
-
     return
 
 
@@ -222,8 +214,6 @@ label scene_1_interaction_1_bread:
     if scene_1_interaction_1_bread_done:
         return
 
-    show bg store at background_freeze
-
     show headshot_cait focus at headshot_left, speaking
     cait "(Normally, Ada would be baking bread for us, but she hasn't been feeling well recently.)"
     cait "(I suppose this will have to do for tonight...)"
@@ -231,8 +221,6 @@ label scene_1_interaction_1_bread:
     hide headshot_cait
 
     $ scene_1_interaction_1_bread_done = True
-
-    show bg store at background_pan
 
     return
 
@@ -245,8 +233,6 @@ label scene_1_interaction_1_soup:
 
     if scene_1_interaction_1_soup_done:
         return
-
-    show bg store at background_freeze
 
     show headshot_cait focus at headshot_left, speaking
     cait "Martin, do you have any more chicken stock? Ada is feeling under the weather..."
@@ -302,7 +288,5 @@ label scene_1_interaction_1_soup:
     hide d9
 
     $ scene_1_interaction_1_soup_done = True
-
-    show bg store at background_pan
 
     return

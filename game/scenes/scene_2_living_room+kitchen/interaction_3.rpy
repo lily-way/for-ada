@@ -91,30 +91,30 @@ label scene_2_interaction_3_armchair:
         (0, 0), "bg living_room"
     ) as bg at background_freeze
 
-    show ada deathly_eyes_open at sprite_right, speaking
+    show ada deathly at sprite_right, speaking
     ada "Back so soon…?"
 
-    show ada deathly_eyes_open at sprite_right, not_speaking
+    show ada deathly at sprite_right, not_speaking
     show headshot_cait worry at headshot_left, speaking
     cait "I’m just softening the meat…"
     cait "What’s wrong, baby?"
 
     hide headshot_cait
-    show ada deathly_eyes_closed at sprite_right, speaking
+    show ada deathly at sprite_right, speaking
     ada "Hurts…"
 
-    show ada deathly_eyes_closed at sprite_right, not_speaking
+    show ada deathly at sprite_right, not_speaking
     show headshot_cait worry at headshot_left, speaking
     cait "Tell me where it hurts?"
 
     hide headshot_cait
-    show ada deathly_eyes_open at sprite_right, speaking
+    show ada deathly at sprite_right, speaking
     ada "I…"
 
-    show ada deathly_eyes_closed at sprite_right, speaking
+    show ada deathly at sprite_right, speaking
     ada "*hack* *hack*"
 
-    show ada deathly_eyes_closed at sprite_right, not_speaking
+    show ada deathly at sprite_right, not_speaking
     show headshot_cait panic at headshot_left, speaking
     cait "(There’s blood…)"
 
@@ -132,14 +132,14 @@ label scene_2_interaction_3_armchair:
     cait "Stay still, baby. Let me get something for your throat."
 
     hide headshot_cait
-    show ada deathly_eyes_closed at sprite_right, speaking
+    show ada deathly at sprite_right, speaking
     ada "*hack* *gasp*"
     ada "Hurts…"
 
-    show ada deathly_eyes_open at sprite_right, speaking
+    show ada deathly at sprite_right, speaking
     ada "Hurts…"
 
-    show ada deathly_eyes_open at sprite_right, not_speaking
+    show ada deathly at sprite_right, not_speaking
 
     # play music "audio/heartbeat_med.mp3"
 
@@ -148,11 +148,11 @@ label scene_2_interaction_3_armchair:
     cait "Hey. Ada!"
 
     hide headshot_cait
-    show ada deathly_eyes_open at sprite_right, speaking
+    show ada deathly at sprite_right, speaking
     ada "*gasp*"
     ada "..."
 
-    show ada deathly_eyes_open at sprite_right, not_speaking
+    show ada deathly at sprite_right, not_speaking
     show headshot_cait panic at headshot_left, speaking
     cait "No, no, no, no, no!"
 

@@ -4,7 +4,24 @@
 
 label scene_1_dialogue_1:
 
+    scene expression Solid("#000000")
+    show expression Text("Chaff-6", size=100, color="#FFFFFF") as chapter_title:
+        xalign 0.5
+        yalign 0.5
+    with fade
+
+    pause 3.0
+
     scene bg store at background_fixed
+    with fade
+
+    play sound "audio/sound_effects/shop_door_bell.mp3"
+
+    $ renpy.pause(0.1, hard=True)
+
+    while renpy.music.is_playing(channel="sound"):
+        $ renpy.pause(0.1, hard=True)
+
     show martin laugh at sprite_middle(y=45), speaking
     with fade
     

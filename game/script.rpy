@@ -24,9 +24,14 @@ label start:
     call scene_4_dialogue_1
     call scene_4_interaction_1
     call scene_4_interaction_2
+    call scene_4_interaction_3
     call scene_4_interaction_4
+    call scene_4_interaction_5
     call scene_4_interaction_6
+    call scene_4_interaction_7
     call scene_4_interaction_8
+    call scene_4_interaction_9
     call scene_4_interaction_10
+    call scene_4_interaction_11
     call scene_4_dialogue_2
     return
