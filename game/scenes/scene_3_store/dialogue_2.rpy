@@ -7,7 +7,7 @@ label scene_3_dialogue_2:
     hide D9_eye_whites
 
     scene bg interior_grocery_store_night at background_fixed
-    with Dissolve(0.5)
+    with fade
 
     show headshot_cait focus at headshot_left, speaking
     cait "(Now D9 is calm…)"
@@ -72,7 +72,7 @@ label scene_3_dialogue_2:
     martin "Now, use that big, educated brain of yours."
     martin "What does she need?"
 
-    show martin PJs_neutral at sprite_right, not_speaking
+    show martin PJs_neutral at sprite_right, speaking
     show headshot_cait focus at headshot_left, speaking
     cait "Lungs."
 
@@ -84,7 +84,7 @@ label scene_3_dialogue_2:
 
     # play sound "audio/stab.mp3"
 
-    show martin horror_1 at sprite_right, not_speaking
+    show martin horror_1 at sprite_right, speaking
     martin "Hrrk!"
 
     menu:

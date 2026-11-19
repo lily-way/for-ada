@@ -3,16 +3,12 @@
 ################################################################################
 
 label scene_4_dialogue_1:
-
-    scene expression Solid("#000000")
-    with Dissolve(0.5)
-
     scene expression Composite(
         (2300, 1200),
         (0, 0), "bg light_cycle_4",
         (0, 0), "bg living_room"
     ) as bg at background_fixed
-    with Dissolve(0.5)
+    with fade
 
     show headshot_cait focus at headshot_left, speaking
     cait "*huff* *huff*"
