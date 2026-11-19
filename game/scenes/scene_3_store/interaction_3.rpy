@@ -85,7 +85,7 @@ label scene_3_interaction_3:
     scene bg martin_clothed_torso at background_pan
     with Dissolve(0.5)
 
-    show headshot_cait focus at headshot_left, speaking
+    show headshot_cait bloody_focus at headshot_left, speaking
     cait "(That was loud. I’ll have to work quickly.)"
 
     hide headshot_cait
@@ -94,28 +94,40 @@ label scene_3_interaction_3:
 
     while not scene_3_interaction_3_clothed_torso_done:
 
-        call screen interaction_screen(scene_3_interaction_3_clothed_torso_objects)
+        call screen interaction_screen(
+            scene_3_interaction_3_clothed_torso_objects
+        )
+
         call expression _return
 
     $ progress_interactions = scene_3_interaction_3_exposed_torso_objects
 
     while not scene_3_interaction_3_exposed_torso_done:
 
-        call screen interaction_screen(scene_3_interaction_3_exposed_torso_objects)
+        call screen interaction_screen(
+            scene_3_interaction_3_exposed_torso_objects
+        )
+
         call expression _return
 
     $ progress_interactions = scene_3_interaction_3_exposed_ribcage_objects
 
     while not scene_3_interaction_3_exposed_ribcage_done:
 
-        call screen interaction_screen(scene_3_interaction_3_exposed_ribcage_objects)
+        call screen interaction_screen(
+            scene_3_interaction_3_exposed_ribcage_objects
+        )
+
         call expression _return
 
     $ progress_interactions = scene_3_interaction_3_exposed_organs_objects
 
     while not scene_3_interaction_3_exposed_organs_done:
 
-        call screen interaction_screen(scene_3_interaction_3_exposed_organs_objects)
+        call screen interaction_screen(
+            scene_3_interaction_3_exposed_organs_objects
+        )
+
         call expression _return
 
     $ progress_interactions = None
@@ -150,7 +162,7 @@ label scene_3_interaction_3_clothed_torso:
 
 label scene_3_interaction_3_exposed_torso:
 
-    show bg martin_exposed_torso at background_pan
+    show bg martin_exposed_torso at background_freeze
 
     menu:
 
@@ -180,7 +192,7 @@ label scene_3_interaction_3_exposed_ribcage:
 
     # play sound "audio/bonesaw.mp3"
 
-    show headshot_cait smile at headshot_left, speaking
+    show headshot_cait bloody_smile at headshot_left, speaking
     cait "(Look at those beautiful new lungs.)"
 
     hide headshot_cait
@@ -204,7 +216,7 @@ label scene_3_interaction_3_exposed_organs:
 
     # play sound "audio/fleshscoop.mp3"
 
-    show headshot_cait smile at headshot_left, speaking
+    show headshot_cait bloody_smile at headshot_left, speaking
     cait "(Thank you, Martin…)"
 
     hide headshot_cait

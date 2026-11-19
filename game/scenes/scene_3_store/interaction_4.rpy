@@ -29,7 +29,6 @@ define scene_3_interaction_4_clothed_torso_objects = [
 
 ]
 
-
 define scene_3_interaction_4_exposed_torso_objects = [
 
     Interaction(
@@ -42,7 +41,6 @@ define scene_3_interaction_4_exposed_torso_objects = [
     ),
 
 ]
-
 
 define scene_3_interaction_4_exposed_organs_objects = [
 
@@ -67,7 +65,7 @@ label scene_3_interaction_4:
     scene bg wife_clothed_torso at background_pan
     with fade
 
-    show headshot_cait focus at headshot_left, speaking
+    show headshot_cait bloody_focus at headshot_left, speaking
     cait "(Now I can focus.)"
 
     hide headshot_cait
@@ -117,6 +115,8 @@ label scene_3_interaction_4_clothed_torso:
     if scene_3_interaction_4_clothed_torso_done:
         return
 
+    show bg wife_clothed_torso at background_freeze
+
     menu:
 
         "Cut through clothing":
@@ -139,6 +139,8 @@ label scene_3_interaction_4_exposed_torso:
     if scene_3_interaction_4_exposed_torso_done:
         return
 
+    show bg wife_exposed_torso at background_freeze
+
     menu:
 
         "Open chest cavity":
@@ -149,7 +151,7 @@ label scene_3_interaction_4_exposed_torso:
             scene bg wife_exposed_organs at background_pan
             with fade
 
-            show headshot_cait focus at headshot_left, speaking
+            show headshot_cait bloody_focus at headshot_left, speaking
             cait "(A brand-new heart.)"
 
             cait "(Just like Martin said.)"
@@ -170,19 +172,23 @@ label scene_3_interaction_4_exposed_organs:
     if scene_3_interaction_4_exposed_organs_done:
         return
 
+    show bg wife_exposed_organs at background_freeze
+
     menu:
 
         "Take heart":
 
             # TODO: Sound - fleshscoop
 
-            scene bg wife_no_heart at background_pan
+            scene bg wife_no_heart at background_freeze
 
             menu:
 
                 "Place heart in cooler":
 
                     # TODO: Sound - gas_release
+
+                    show bg wife_no_heart at background_pan
 
                     $ scene_3_interaction_4_exposed_organs_done = True
 

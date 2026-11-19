@@ -23,7 +23,7 @@ label scene_3_dialogue_3:
     martins_wife "D9, protection mode!!!"
 
     show martins_wife horror at sprite_middle, not_speaking
-    show headshot_cait focus at headshot_left, speaking
+    show headshot_cait bloody_focus at headshot_left, speaking
     cait "(Better pack these up.)"
 
     hide headshot_cait
@@ -38,7 +38,7 @@ label scene_3_dialogue_3:
     martins_wife "D9!!! Priority one, protection mode!!!"
 
     show martins_wife horror at sprite_middle, not_speaking
-    show headshot_cait focus at headshot_left, speaking
+    show headshot_cait bloody_focus at headshot_left, speaking
     cait "(And I need my tools.)"
 
     hide headshot_cait
@@ -53,7 +53,7 @@ label scene_3_dialogue_3:
     martins_wife "D9, please–"
 
     show martins_wife horror at sprite_middle, not_speaking
-    show headshot_cait focus at headshot_left, speaking
+    show headshot_cait bloody_focus at headshot_left, speaking
     cait "Don’t bother."
     cait "She can’t hear you."
 
