@@ -82,40 +82,52 @@ label scene_3_interaction_3:
     scene expression Solid("#000000")
     with Dissolve(0.5)
 
-    scene bg martin_clothed_torso at background_fixed
+    scene bg martin_clothed_torso at background_pan
     with Dissolve(0.5)
 
-    show headshot_cait focus at headshot_left, speaking
+    show headshot_cait bloody_focus at headshot_left, speaking
     cait "(That was loud. I’ll have to work quickly.)"
 
     hide headshot_cait
 
-    show bg martin_clothed_torso at background_fixed
+    show bg martin_clothed_torso at background_pan
 
     while not scene_3_interaction_3_clothed_torso_done:
 
-        call screen interaction_screen(scene_3_interaction_3_clothed_torso_objects)
+        call screen interaction_screen(
+            scene_3_interaction_3_clothed_torso_objects
+        )
+
         call expression _return
 
     $ progress_interactions = scene_3_interaction_3_exposed_torso_objects
 
     while not scene_3_interaction_3_exposed_torso_done:
 
-        call screen interaction_screen(scene_3_interaction_3_exposed_torso_objects)
+        call screen interaction_screen(
+            scene_3_interaction_3_exposed_torso_objects
+        )
+
         call expression _return
 
     $ progress_interactions = scene_3_interaction_3_exposed_ribcage_objects
 
     while not scene_3_interaction_3_exposed_ribcage_done:
 
-        call screen interaction_screen(scene_3_interaction_3_exposed_ribcage_objects)
+        call screen interaction_screen(
+            scene_3_interaction_3_exposed_ribcage_objects
+        )
+
         call expression _return
 
     $ progress_interactions = scene_3_interaction_3_exposed_organs_objects
 
     while not scene_3_interaction_3_exposed_organs_done:
 
-        call screen interaction_screen(scene_3_interaction_3_exposed_organs_objects)
+        call screen interaction_screen(
+            scene_3_interaction_3_exposed_organs_objects
+        )
+
         call expression _return
 
     $ progress_interactions = None
@@ -130,7 +142,7 @@ label scene_3_interaction_3:
 
 label scene_3_interaction_3_clothed_torso:
 
-    scene bg martin_exposed_torso at background_fixed
+    scene bg martin_exposed_torso at background_pan
 
     play sound "audio/sound_effects/tear_fabric.mp3"
 
@@ -141,7 +153,7 @@ label scene_3_interaction_3_clothed_torso:
 
     $ scene_3_interaction_3_clothed_torso_done = True
 
-    show bg martin_exposed_torso at background_fixed
+    show bg martin_exposed_torso at background_pan
 
     return
 
@@ -152,7 +164,7 @@ label scene_3_interaction_3_clothed_torso:
 
 label scene_3_interaction_3_exposed_torso:
 
-    show bg martin_exposed_torso at background_fixed
+    show bg martin_exposed_torso at background_freeze
 
     menu:
 
@@ -160,14 +172,14 @@ label scene_3_interaction_3_exposed_torso:
 
             play sound "audio/sound_effects/chop_meat.mp3"
 
-            scene bg martin_exposed_ribcage at background_fixed
+            scene bg martin_exposed_ribcage at background_pan
             with Fade(0.3, 1.0, 0.3)
 
             martins_wife "This better not be another one of your practical jokes!"
 
             $ scene_3_interaction_3_exposed_torso_done = True
 
-            show bg martin_exposed_ribcage at background_fixed
+            show bg martin_exposed_ribcage at background_pan
 
     return
 
@@ -178,13 +190,13 @@ label scene_3_interaction_3_exposed_torso:
 
 label scene_3_interaction_3_exposed_ribcage:
 
-    scene bg martin_exposed_organs at background_fixed
+    scene bg martin_exposed_organs at background_pan
 
     play sound "audio/sound_effects/skin_peel.mp3"
 
     pause 0.5
 
-    show headshot_cait smile at headshot_left, speaking
+    show headshot_cait bloody_smile at headshot_left, speaking
     cait "(Look at those beautiful new lungs.)"
 
     hide headshot_cait
@@ -193,7 +205,7 @@ label scene_3_interaction_3_exposed_ribcage:
 
     $ scene_3_interaction_3_exposed_ribcage_done = True
 
-    show bg martin_exposed_organs at background_fixed
+    show bg martin_exposed_organs at background_pan
 
     return
 
@@ -204,13 +216,13 @@ label scene_3_interaction_3_exposed_ribcage:
 
 label scene_3_interaction_3_exposed_organs:
 
-    scene bg martin_no_lungs at background_fixed
+    scene bg martin_no_lungs at background_pan
 
     play sound "audio/sound_effects/organ_removal.mp3"
 
     pause 0.5
 
-    show headshot_cait smile at headshot_left, speaking
+    show headshot_cait bloody_smile at headshot_left, speaking
     cait "(Thank you, Martin…)"
 
     hide headshot_cait

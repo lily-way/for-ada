@@ -29,7 +29,6 @@ define scene_3_interaction_4_clothed_torso_objects = [
 
 ]
 
-
 define scene_3_interaction_4_exposed_torso_objects = [
 
     Interaction(
@@ -42,7 +41,6 @@ define scene_3_interaction_4_exposed_torso_objects = [
     ),
 
 ]
-
 
 define scene_3_interaction_4_exposed_organs_objects = [
 
@@ -64,10 +62,10 @@ define scene_3_interaction_4_exposed_organs_objects = [
 
 label scene_3_interaction_4:
 
-    scene bg wife_clothed_torso at background_fixed
+    scene bg wife_clothed_torso at background_pan
     with fade
 
-    show headshot_cait focus at headshot_left, speaking
+    show headshot_cait bloody_focus at headshot_left, speaking
     cait "(Now I can focus.)"
 
     hide headshot_cait
@@ -117,6 +115,8 @@ label scene_3_interaction_4_clothed_torso:
     if scene_3_interaction_4_clothed_torso_done:
         return
 
+    show bg wife_clothed_torso at background_freeze
+
     menu:
 
         "Cut through clothing":
@@ -125,7 +125,7 @@ label scene_3_interaction_4_clothed_torso:
 
             pause 0.5
 
-            scene bg wife_exposed_torso at background_fixed
+            scene bg wife_exposed_torso at background_pan
 
             $ scene_3_interaction_4_clothed_torso_done = True
 
@@ -141,16 +141,18 @@ label scene_3_interaction_4_exposed_torso:
     if scene_3_interaction_4_exposed_torso_done:
         return
 
+    show bg wife_exposed_torso at background_freeze
+
     menu:
 
         "Open chest cavity":
 
             play sound "audio/sound_effects/chop_meat.mp3"
 
-            scene bg wife_exposed_organs at background_fixed
+            scene bg wife_exposed_organs at background_pan
             with Fade(0.3, 1.0, 0.3)
 
-            show headshot_cait focus at headshot_left, speaking
+            show headshot_cait bloody_focus at headshot_left, speaking
             cait "(A brand-new heart.)"
 
             cait "(Just like Martin said.)"
@@ -171,6 +173,8 @@ label scene_3_interaction_4_exposed_organs:
     if scene_3_interaction_4_exposed_organs_done:
         return
 
+    show bg wife_exposed_organs at background_freeze
+
     menu:
 
         "Take heart":
@@ -179,7 +183,7 @@ label scene_3_interaction_4_exposed_organs:
 
             pause 0.5
 
-            scene bg wife_no_heart at background_fixed
+            scene bg wife_no_heart at background_freeze
 
             menu:
 
@@ -188,6 +192,8 @@ label scene_3_interaction_4_exposed_organs:
                     play sound "audio/sound_effects/gas_release.mp3"
     
                     pause 0.5
+
+                    show bg wife_no_heart at background_pan
 
                     $ scene_3_interaction_4_exposed_organs_done = True
 

@@ -105,7 +105,7 @@ label scene_4_interaction_6:
 
     scene expression scene_4_interaction_4_background() as bg at background_pan
     with Fade(0.5, 2.0, 0.5)
-    
+
     $ progress_interactions = scene_4_interaction_6_file_objects
 
     while not scene_4_interaction_6_file_done:
@@ -127,7 +127,7 @@ label scene_4_interaction_6:
         call expression _return
 
     hide headshot_cait
-    hide headshot_ada
+    hide young_ada
 
     show expression scene_4_interaction_4_background() as bg at background_fixed
 
@@ -257,23 +257,21 @@ label scene_4_interaction_6_bed:
 
     show expression scene_4_interaction_4_background() as bg at background_freeze
 
-    show headshot_ada young_neutral at headshot_right, speaking
+    show young_ada neutral at sprite_right, speaking
     young_ada "So you’re telling me that we’ve met before, only I don’t remember."
 
-    hide headshot_ada
-
+    show young_ada neutral at sprite_right, not_speaking
     show headshot_cait young_focus at headshot_left, speaking
     young_cait "That’s exactly right."
 
     hide headshot_cait
 
-    show headshot_ada young_neutral at headshot_right, speaking
+    show young_ada neutral at sprite_right, speaking
     young_ada "Nope."
 
     young_ada "I don’t buy it."
 
-    hide headshot_ada
-
+    show young_ada neutral at sprite_right, not_speaking
     show headshot_cait young_pissed at headshot_left, speaking
     young_cait "What do you mean you don’t buy it?"
 
@@ -281,20 +279,19 @@ label scene_4_interaction_6_bed:
 
     hide headshot_cait
 
-    show headshot_ada young_mischief at headshot_right, speaking
+    show young_ada mischief at sprite_right, speaking
     young_ada "I just think you’re a little too life-changing to forget."
 
-    hide headshot_ada
-
+    show young_ada mischief at sprite_right, not_speaking
     show headshot_cait young_focus at headshot_left, speaking
     young_cait "Coming on a little strong, don’t you think?"
 
     hide headshot_cait
 
-    show headshot_ada young_mischief at headshot_right, speaking
+    show young_ada mischief at sprite_right, speaking
     young_ada "Not my problem if I forget this all tomorrow."
 
-    hide headshot_ada
+    hide young_ada
 
     $ scene_4_interaction_6_bed_done = True
 

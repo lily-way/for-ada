@@ -353,6 +353,7 @@ label scene_4_interaction_2_d9_exposed:
             pass
 
     show bg d9_tubes_torso at background_freeze
+    with fade
 
     show headshot_cait bloody_focus at headshot_left, speaking
     cait "(Thank you, D9.)"
