@@ -79,8 +79,14 @@ label scene_3_interaction_1:
     $ progress_interactions = scene_3_interaction_1_door_objects
     $ progress_open = False
 
+    play music "audio/loops/rainstorm.mp3" fadein 1.0
+
+    pause 2.0
+
     scene bg storefront_window at background_freeze
     with fade
+
+    pause 1.0
 
     show headshot_cait focus at headshot_left, speaking
     cait "(He must be inside with his family…)"
@@ -233,6 +239,8 @@ label scene_3_interaction_1_enter_window:
 
     scene expression Solid("#000000")
     with Dissolve(0.5)
+
+    stop music fadeout 1.0
 
     $ scene_3_interaction_1_window_done = True
 

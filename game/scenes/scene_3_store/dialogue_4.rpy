@@ -7,6 +7,9 @@ label scene_3_dialogue_4:
     scene bg store at background_fixed
     with fade
 
+    show headshot_cait bloody_focus at headshot_left, speaking
+    cait "(It's done.)"
+
     show headshot_cait bloody_smile at headshot_left, speaking
     cait "(Now I can save her…)"
 
@@ -40,10 +43,10 @@ label scene_3_dialogue_4:
     scene expression Solid("#000000")
     with fade
 
-    play sound "audio/loops/body_drag_loop.mp3" loop
-    # play sound "audio/loops/rainstorm.mp3" loop
+    play sound "audio/loops/drag_body_loop.mp3" loop
+    play sound "audio/loops/rainstorm.mp3" loop
 
-    pause 2.0
+    pause 3.0
 
     show headshot_cait bloody_focus at headshot_left, speaking
     cait "*huff* *huff*"

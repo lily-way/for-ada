@@ -28,7 +28,7 @@ label scene_3_dialogue_2:
 
     play sound "audio/sound_effects/stairs_martin.mp3"
 
-    pause 1.0
+    pause 4.5
 
     show martin PJs_concerned at sprite_middle, not_speaking
 
@@ -111,6 +111,6 @@ label scene_3_dialogue_2:
 
     play sound "audio/sound_effects/body_thud.mp3"
 
-    pause 0.5
+    pause 1.5
 
     return

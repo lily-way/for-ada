@@ -179,9 +179,11 @@ label scene_3_interaction_4_exposed_organs:
 
         "Take heart":
 
+            pause 0.1
+
             play sound "audio/sound_effects/organ_removal.mp3"
 
-            pause 0.5
+            pause 0.3
 
             scene bg wife_no_heart at background_freeze
 
@@ -191,7 +193,7 @@ label scene_3_interaction_4_exposed_organs:
 
                     play sound "audio/sound_effects/gas_release.mp3"
     
-                    pause 0.5
+                    pause 1.0
 
                     show bg wife_no_heart at background_pan
 

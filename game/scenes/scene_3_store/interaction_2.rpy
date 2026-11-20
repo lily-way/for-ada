@@ -283,7 +283,7 @@ label scene_3_interaction_2_neck:
 
         "Reveal flash ports":
 
-            play sound "audio/sound_effects/d9_port_reveal"
+            play sound "audio/sound_effects/d9_port_reveal.mp3"
 
             show expression "images/backgrounds/d9_empty_port.png" as port zorder 10 at background_freeze
 
@@ -300,7 +300,7 @@ label scene_3_interaction_2_neck:
 
         "Insert damping drive":
 
-            play sound "audio/sound_effects/d9_port_insert"
+            play sound "audio/sound_effects/d9_port_insert.mp3"
 
             show bg d9_closeup_auto at background_freeze
             show expression "images/backgrounds/d9_full_port.png" as port zorder 10 at background_freeze

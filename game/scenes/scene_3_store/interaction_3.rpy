@@ -190,11 +190,13 @@ label scene_3_interaction_3_exposed_torso:
 
 label scene_3_interaction_3_exposed_ribcage:
 
-    scene bg martin_exposed_organs at background_pan
-
     play sound "audio/sound_effects/skin_peel.mp3"
 
     pause 0.5
+
+    scene bg martin_exposed_organs at background_pan
+
+    pause 1.0
 
     show headshot_cait bloody_smile at headshot_left, speaking
     cait "(Look at those beautiful new lungs.)"
@@ -216,11 +218,13 @@ label scene_3_interaction_3_exposed_ribcage:
 
 label scene_3_interaction_3_exposed_organs:
 
-    scene bg martin_no_lungs at background_pan
-
     play sound "audio/sound_effects/organ_removal.mp3"
 
-    pause 0.5
+    pause 0.1
+
+    scene bg martin_no_lungs at background_pan
+
+    pause 0.3
 
     show headshot_cait bloody_smile at headshot_left, speaking
     cait "(Thank you, Martin…)"
@@ -229,7 +233,7 @@ label scene_3_interaction_3_exposed_organs:
 
     play sound "audio/sound_effects/stairs_d9_walk.mp3"
 
-    pause 1.0
+    pause 2.0
 
     martins_wife "Martin…?"
 

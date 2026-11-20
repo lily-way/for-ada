@@ -47,7 +47,7 @@ label scene_3_dialogue_1:
 
     play sound "audio/sound_effects/stairs_d9_walk.mp3"
 
-    pause 1.0
+    pause 3.0
 
     show d9 automaton at sprite_middle, speaking
     d9 "..."
