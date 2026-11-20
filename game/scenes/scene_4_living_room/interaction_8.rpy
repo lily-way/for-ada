@@ -221,24 +221,40 @@ label scene_4_interaction_8_file:
 
         "Read repair file":
             pass
-
-    # TODO: Sound - Page flip
+    
+    play sound "audio/sound_effects/page_flip.mp3"
 
     "File" "Log Entry #30."
+    
+    play sound "audio/sound_effects/page_flip.mp3"
 
     "File" "Ada’s owners have moved off-planet."
+    
+    play sound "audio/sound_effects/page_flip.mp3"
 
     "File" "I think I’m close to a breakthrough, but they didn’t want to stick around."
+    
+    play sound "audio/sound_effects/page_flip.mp3"
 
     "File" "But maybe this is the best for everyone."
+    
+    play sound "audio/sound_effects/page_flip.mp3"
 
     "File" "For one, I no longer need their permission to modify Ada’s physical frame."
+    
+    play sound "audio/sound_effects/page_flip.mp3"
 
     "File" "I’ve made surgical improvements to the base D4 model that Ada seems much more comfortable with."
+    
+    play sound "audio/sound_effects/page_flip.mp3"
 
     "File" "Once I can correct her memory, she’ll be able to choose where she goes next."
+    
+    play sound "audio/sound_effects/page_flip.mp3"
 
     "File" "I look forward to helping her become independent."
+    
+    play sound "audio/sound_effects/page_close.mp3"
 
     $ scene_4_interaction_8_file_done = True
 

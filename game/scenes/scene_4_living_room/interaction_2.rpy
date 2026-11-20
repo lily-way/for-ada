@@ -148,7 +148,9 @@ label scene_4_interaction_2_kitchen_floor:
         "Dump D9":
             pass
 
-    # TODO: Sound - Thud
+    play sound "audio/sound_effects/body_thud.mp3"
+
+    pause 0.5
 
     "Cait kneels over the paralyzed body."
 
@@ -162,7 +164,9 @@ label scene_4_interaction_2_kitchen_floor:
         "Glove up":
             pass
 
-    # TODO: Sound - Latex gloves
+    play sound "audio/sound_effects/latex_glove.mp3"
+
+    pause 1.0
 
     show headshot_cait bloody_focus at headshot_left, speaking
     cait "(Much better.)"
@@ -232,7 +236,9 @@ label scene_4_interaction_2_d9_neck:
 
     show bg d9_clothed_torso at background_freeze
 
-    # TODO: Sound - Heartbeat
+    play sound "audio/loops/heartbeat_fast.mp3"
+    pause 3.0
+    stop sound
 
     show headshot_cait bloody_focus at headshot_left, speaking
     cait "(Still alive. That’s good.)"
@@ -302,9 +308,9 @@ label scene_4_interaction_2_d9_clothed:
 
     show bg d9_cut_torso at background_freeze
 
-    # TODO: Sound - Tearing fabric
+    play sound "audio/sound_effects/tear_fabric.mp3"
 
-    $ renpy.pause(0.3, hard=True)
+    pause 1.0
 
     show bg d9_exposed_torso at background_freeze
 
@@ -345,7 +351,9 @@ label scene_4_interaction_2_d9_exposed:
 
     show bg d9_ports_torso at background_freeze
 
-    # TODO: Sound - Gas release
+    play sound "audio/sound_effects/gas_release.mp3"
+
+    pause 1.0
 
     menu:
 
@@ -354,6 +362,9 @@ label scene_4_interaction_2_d9_exposed:
 
     show bg d9_tubes_torso at background_freeze
     with fade
+
+    play sound "audio/sound_effects/d9_port_reveal.mp3"
+    pause 0.5
 
     show headshot_cait bloody_focus at headshot_left, speaking
     cait "(Thank you, D9.)"

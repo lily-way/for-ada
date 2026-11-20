@@ -41,6 +41,10 @@ label scene_4_interaction_3:
         "Open her up":
             pass
 
+    play sound "audio/sound_effects/skin_peel.mp3"
+
+    pause 1.0
+
     scene bg ada_hand_2 at background_fixed
     with fade
 
@@ -83,6 +87,8 @@ label scene_4_interaction_3:
             pass
 
     scene bg ada_hand_2 at scene_4_interaction_3_pan_down
+
+    play sound "audio/sound_effects/skin_peel.mp3"
 
     $ renpy.pause(1.0, hard=True)
 

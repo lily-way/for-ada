@@ -233,25 +233,35 @@ label scene_4_interaction_4_file:
         "Read repair file":
             pass
 
-    # TODO: Sound - Page flip
+    play sound "audio/sound_effects/page_flip.mp3"
 
     "File" "Log Entry #1."
 
+    play sound "audio/sound_effects/page_flip.mp3"
+
     "File" "Owners report major memory and behavioral issues."
+    
+    play sound "audio/sound_effects/page_flip.mp3"
 
     "File" "The D4 android possesses a consistent sense of self and worldly knowledge, but no memory of its immediate surroundings or duties."
+    
+    play sound "audio/sound_effects/page_flip.mp3"
 
     "File" "Loss of memory is coupled with non-compliant activity, including the following:"
+    
+    play sound "audio/sound_effects/page_flip.mp3"
 
     "File" "Cutting or shaving its hair,"
 
     "File" "Reading books and news articles,"
 
     "File" "Self-destruction to breast tissue."
+    
+    play sound "audio/sound_effects/page_flip.mp3"
 
     "File" "The D4 is non-responsive to verbal and physical instruction."
-
-    # TODO: Sound - Page flip
+    
+    play sound "audio/sound_effects/page_close.mp3"
 
     show headshot_cait young_worry at headshot_left, speaking
     young_cait "(...)"

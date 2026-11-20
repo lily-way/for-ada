@@ -44,7 +44,7 @@ label scene_3_dialogue_4:
     with fade
 
     play sound "audio/loops/drag_body_loop.mp3" loop
-    play sound "audio/loops/rainstorm.mp3" loop
+    play music "audio/loops/rainstorm.mp3" loop fadein 2.0
 
     pause 3.0
 
@@ -67,5 +67,8 @@ label scene_3_dialogue_4:
     hide headshot_cait
 
     pause 2.0
+
+    stop sound
+    stop music fadeout 2.0
 
     return

@@ -206,7 +206,7 @@ label scene_4_interaction_1_go_to_kitchen:
 
         $ scene_4_interaction_1_kitchen_door_done = True
 
-        # TODO: Sound - Drag body
+        play sound "audio/sound_effects/drag_body.mp3"
 
     $ scene_4_interaction_1_room = "kitchen"
 

@@ -106,7 +106,7 @@ label scene_4_memory_3:
     scene expression Solid("#000000")
     with fade
 
-    cait "The curious thing about your memory loss was how consistently you you were."
+    cait "The curious thing about your memory loss was how consistently {i}you{/i} you were."
 
     cait "No matter how often your memory reset, you still had the same tastes."
 
@@ -178,7 +178,7 @@ label scene_4_memory_5:
 
     cait "My fix was trivial."
 
-    cait "Essentially a biosynthetic memory card. Nothing that hadn’t been thoroughly established in my field"
+    cait "Essentially a biosynthetic memory card. Nothing that hadn’t been thoroughly established in my field."
 
     cait "The only difference is that I included space for sixty years’ worth of memories, not two."
 

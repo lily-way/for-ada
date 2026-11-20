@@ -215,26 +215,44 @@ label scene_4_interaction_6_file:
 
         "Read repair file":
             pass
-
-    # TODO: Sound - Page flip
+    
+    play sound "audio/sound_effects/page_flip.mp3"
 
     "File" "Log Entry #11."
+    
+    play sound "audio/sound_effects/page_flip.mp3"
 
     "File" "She calls herself Ada."
+    
+    play sound "audio/sound_effects/page_flip.mp3"
 
     "File" "Ada is much calmer than originally reported by her owners."
+    
+    play sound "audio/sound_effects/page_flip.mp3"
 
     "File" "Particularly after being supplied with hair clippers and cutting shears."
+    
+    play sound "audio/sound_effects/page_flip.mp3"
 
     "File" "Her memory problems are persistent, but short-term."
+    
+    play sound "audio/sound_effects/page_flip.mp3"
 
     "File" "She retains and builds knowledge about the world, even as she forgets her circumstances."
+    
+    play sound "audio/sound_effects/page_flip.mp3"
 
     "File" "To further test this, she’ll be presented with novels and other reading materials beginning this week."
+    
+    play sound "audio/sound_effects/page_flip.mp3"
 
     "File" "This is anticipated to reveal more information on the nature of her memory loss."
+    
+    play sound "audio/sound_effects/page_flip.mp3"
 
     "File" "It may also help improve her mood."
+    
+    play sound "audio/sound_effects/page_close.mp3"
 
     $ scene_4_interaction_6_file_done = True
 
