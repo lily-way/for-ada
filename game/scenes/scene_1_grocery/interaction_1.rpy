@@ -78,14 +78,15 @@ label scene_1_interaction_1:
     $ progress_interactions = scene_1_interaction_1_objects
     $ progress_open = False
 
-    scene bg store at background_fixed
+    scene bg store at background_pan
 
     "(Use the mouse to look around!)"
     "(Your cursor will highlight certain objects and people you can inspect.)"
     "(Click on those things to interact with them!)"
-    "(Bronze objects are optional, while gold objects are mandatory.)"
-    "(Press Q to view how many mandatory and optional interactions you've completed.)"
-    "(Warning! Once you've completed all mandatory interactions, you won't be able to go back.)"
+    "(When your cursor turns bronze, it means the interaction is optional.)"
+    "(If it turns gold, it is mandatory.)"
+    "({b}Press Q{/b} to view how many mandatory and optional interactions you've completed.)"
+    "({b}Warning!{/b} Once you've completed all mandatory interactions, you won't be able to go back.)"
 
     while not (
         scene_1_interaction_1_wine_done
