@@ -14,6 +14,7 @@
 
 define config.name = _("For Ada")
 
+define config.default_fullscreen = True
 
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
