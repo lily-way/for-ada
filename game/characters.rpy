@@ -117,3 +117,9 @@ define young_ada = Character(
     cb_blip_delay=0.01
 )
 
+define radio = Character(
+    "Radio",
+    callback=dialogue_blip,
+    cb_blip="audio/characters/radio.wav",
+    cb_blip_delay=0.01
+)

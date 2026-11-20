@@ -773,17 +773,17 @@ label scene_2_interaction_1_radio_965:
 
     if not scene_2_interaction_1_radio_965_done:
 
-        "Radio" "--clear skies for now, but watch out for heavy rainfall later tonight!"
+        radio "--clear skies for now, but watch out for heavy rainfall later tonight!"
 
-        "Radio" "The monsoon season is starting, so homesteaders across Chaff-6 can expect these conditions to continue for several weeks at least."
+        radio "The monsoon season is starting, so homesteaders across Chaff-6 can expect these conditions to continue for several weeks at least."
 
-        "Radio" "And good timing at that! If the rain had hit any earlier, Chaff-6’s last fleet of grain ships could have been grounded for the season."
+        radio "And good timing at that! If the rain had hit any earlier, Chaff-6’s last fleet of grain ships could have been grounded for the season."
 
-        "Radio" "Luckily, the grain’s made it off-planet, so Chaff-sixers can head into the quiet months knowing that their crops will feed mouths across the galaxy."
+        radio "Luckily, the grain’s made it off-planet, so Chaff-sixers can head into the quiet months knowing that their crops will feed mouths across the galaxy."
 
-        "Radio" "We hope you’ve stocked up on off-planet goods, because you won’t be seeing a foreign ship for another few cycles at least!"
+        radio "We hope you’ve stocked up on off-planet goods, because you won’t be seeing a foreign ship for another few cycles at least!"
 
-        "Radio" "That’s it for today’s weather. Stay tuned for our local Chaff-6 bluegrass hour!"
+        radio "That’s it for today’s weather. Stay tuned for our local Chaff-6 bluegrass hour!"
 
         # play music "audio/bluegrass.mp3" fadein 1.0
 
@@ -805,7 +805,7 @@ label scene_2_interaction_1_radio_965:
 
     else:
 
-        "Radio" "That’s it for today’s weather. Stay tuned for our local Chaff-6 bluegrass hour!"
+        radio "That’s it for today’s weather. Stay tuned for our local Chaff-6 bluegrass hour!"
 
         # play music "audio/bluegrass.mp3" fadein 1.0
 
@@ -824,17 +824,17 @@ label scene_2_interaction_1_radio_1051:
 
     if not scene_2_interaction_1_radio_1051_done:
 
-        "Radio" "--authorities uncovered an illegal android regrafting operation just two systems away from Chaff."
+        radio "--authorities uncovered an illegal android regrafting operation just two systems away from Chaff."
 
-        "Radio" "Organs meant for new android frames were found implanted in older models past the legal two-year limit."
+        radio "Organs meant for new android frames were found implanted in older models past the legal two-year limit."
 
-        "Radio" "All androids found at the site were immediately dismantled and the operators have been apprehended."
+        radio "All androids found at the site were immediately dismantled and the operators have been apprehended."
 
-        "Radio" "They are now en route to homeworld, where they will stand trial."
+        radio "They are now en route to homeworld, where they will stand trial."
 
-        "Radio" "That’s it for today’s intergalaxy news report."
+        radio "That’s it for today’s intergalaxy news report."
 
-        "Radio" "Stay tuned for {i}Under the Stars{/i}, our classical jazz program!"
+        radio "Stay tuned for {i}Under the Stars{/i}, our classical jazz program!"
 
         # play music "audio/jazz.mp3" fadein 1.0
 
@@ -873,9 +873,9 @@ label scene_2_interaction_1_radio_1051:
 
     else:
 
-        "Radio" "That’s it for today’s intergalaxy news report."
+        radio "That’s it for today’s intergalaxy news report."
 
-        "Radio" "Stay tuned for {i}Under the Stars{/i}, our classical jazz program!"
+        radio "Stay tuned for {i}Under the Stars{/i}, our classical jazz program!"
 
         # play music "audio/jazz.mp3" fadein 1.0
 
@@ -894,23 +894,23 @@ label scene_2_interaction_1_radio_1070:
 
     if not scene_2_interaction_1_radio_1070_done:
 
-        "Radio" "--looking for your next holiday getaway?"
+        radio "--looking for your next holiday getaway?"
 
-        "Radio" "Consider a trip to your great planet of origin, Earth!"
+        radio "Consider a trip to your great planet of origin, Earth!"
 
-        "Radio" "Visit beautiful cities with histories stretching back thousands of years!"
+        radio "Visit beautiful cities with histories stretching back thousands of years!"
 
-        "Radio" "Take a tour of the capitol and see how an entire galaxy is governed in just one metro!"
+        radio "Take a tour of the capitol and see how an entire galaxy is governed in just one metro!"
 
-        "Radio" "Explore archeological sites such as The Great Wall, the Acropolis, and Houston!"
+        radio "Explore archeological sites such as The Great Wall, the Acropolis, and Houston!"
 
-        "Radio" "So buy your tickets now at your local Enterprise Starliners office!"
+        radio "So buy your tickets now at your local Enterprise Starliners office!"
 
-        "Radio" "Special fares apply for those who book using the promo code, ‘HOMEWORLD’!"
+        radio "Special fares apply for those who book using the promo code, ‘HOMEWORLD’!"
 
-        "Radio" "That’s it for today in entertainment."
+        radio "That’s it for today in entertainment."
 
-        "Radio" "Stay tuned for the newest, hottest sounds in synthwave."
+        radio "Stay tuned for the newest, hottest sounds in synthwave."
 
         # play music "audio/synthwave.mp3" fadein 1.0
 
@@ -999,9 +999,9 @@ label scene_2_interaction_1_radio_1070:
 
     else:
 
-        "Radio" "That’s it for today in entertainment."
+        radio "That’s it for today in entertainment."
 
-        "Radio" "Stay tuned for the newest, hottest sounds in synthwave."
+        radio "Stay tuned for the newest, hottest sounds in synthwave."
 
         # play music "audio/synthwave.mp3" fadein 1.0
 
