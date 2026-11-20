@@ -52,7 +52,7 @@ label scene_3_dialogue_3:
 
     play sound "audio/sound_effects/stab_removal.mp3"
 
-    pause 0.5
+    pause 1.0
 
     show martins_wife horror at sprite_middle, speaking
     martins_wife "D9, please–"

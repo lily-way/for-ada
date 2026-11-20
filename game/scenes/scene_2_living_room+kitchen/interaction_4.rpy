@@ -272,6 +272,8 @@ label scene_2_interaction_4_door:
     scene expression Solid("#000000")
     with Dissolve(0.5)
 
+    pause 2.0
+
     $ scene_2_interaction_4_door_done = True
 
     return
