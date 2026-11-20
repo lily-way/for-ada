@@ -51,7 +51,7 @@ init python:
 ################################################################################
 
 screen interaction_screen(interactions):
-    key "K_b" action Function(debug_editor_open)
+    # key "K_b" action Function(debug_editor_open)
     fixed:
         xsize 2300
         ysize 1200
