@@ -43,7 +43,7 @@ label scene_4_interaction_3:
 
     play sound "audio/sound_effects/skin_peel.mp3"
 
-    pause 1.0
+    pause 0.5
 
     scene bg ada_hand_2 at background_fixed
     with fade
@@ -90,7 +90,7 @@ label scene_4_interaction_3:
 
     play sound "audio/sound_effects/skin_peel.mp3"
 
-    $ renpy.pause(1.0, hard=True)
+    pause 0.5
 
     scene bg ada_healthy_neither at background_fixed
     with fade
